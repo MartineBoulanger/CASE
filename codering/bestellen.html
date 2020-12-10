@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Martine Boulanger, Steven Kelber" />
+    <meta description="reserveringen maken" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Bestelling</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Java the Hutt</h1>
+        <h2>De beste koffie en broodjes van België</h2>
+      </div>
+    </header>
+    <div class="navigatie">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="koffie.html">Koffie</a></li>
+          <li><a href="bakkerij.html">Bakkerij</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="maincontent reservering">
+      <div class="intro">
+        <h1>Bestelling</h1>
+        <p>
+          Wij doen ook bestellinegn!
+          U kunt bij ons belegde broodjes, gebak, brood en koffie bestellen, wij maken uw bestel klaar en dan kunt u uw bestelling ophalen, wilt u ze liever laten bezorgen? Dat kan! Wij doen ook bezorgen.
+        </p>
+      </div>
+      <form id="form-bestellen">
+          <p>
+            <label for="naam">Naam</label>
+            <input type="text" name="naam" id="naam" placeholder="uw volledige naam">*
+            <span class="error" id="naam_error"></span>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">*
+            <span class="error" id="email_error"></span>
+          </p>
+          <p>
+            <label for="tel">Tel</label>
+            <input type="tel" name="tel" id="tel">*
+            <span class="error" id="tel_error"></span>
+          </p>
+          <p>
+            <label for="product">Product</label>
+            <select name="belegdebroodjes" id="belegdebroodjes">
+              <option value="">selecteer</option>
+              <option value="">Broodje1</option>
+              <option value="">Broodje2</option>
+              <option value="">Broodje3</option>
+              <option value="">Broodje4</option>
+              <option value="">Broodje5</option>
+              <option value="">Broodje6</option>
+              <option value="">Broodje7</option>
+              <option value="">Broodje8</option>
+              <option value="">Broodje9</option>
+            </select>
+            <span class="error" id="belegdebroodjes_error"></span>
+            <select name="gebak" id="gebak">
+              <option value="">selecteer</option>
+              <option value="">Gebak1</option>
+              <option value="">Gebak2</option>
+              <option value="">Gebak3</option>
+              <option value="">Gebak4</option>
+              <option value="">Gebak5</option>
+              <option value="">Gebak6</option>
+              <option value="">Gebak7</option>
+              <option value="">Gebak8</option>
+              <option value="">Gebak9</option>
+            </select>
+            <span class="error" id="gebak_error"></span>
+            <select name="brood" id="brood">
+              <option value="">selecteer</option>
+              <option value="">Brood1</option>
+              <option value="">Brood2</option>
+              <option value="">Brood3</option>
+              <option value="">Brood4</option>
+              <option value="">Brood5</option>
+              <option value="">Brood6</option>
+              <option value="">Brood7</option>
+              <option value="">Brood8</option>
+              <option value="">Brood9</option>
+            </select>
+            <span class="error" id="brood_error"></span>
+            <select name="koffie" id="koffie">
+              <option value="">selecteer</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+              <option value="">Koffie1</option>
+            </select>
+            <span class="error" id="koffie_error"></span>
+          </p>
+          <p>
+            <label for="aantalbroodjes">Aantal belegde broodjes</label>
+            <input type="number" name="aantalbroodjes" id="aantalbroodjes" min="1" max="10">
+            <span class="error" id="aantalbroodjes_error"></span>
+          </p>
+          <p>
+            <label for="aantalbroden">Aantal broden</label>
+            <input type="number" name="aantalbroden" id="aantalbroden" min="1" max="10">
+            <span class="error" id="aantalbroden_error"></span>
+          </p>
+          <p>
+            <label for="aantalgebakjes">Aantal gebakjes</label>
+            <input type="number" name="aantalgebakjes" id="aantalgebakjes" min="1" max="10">
+            <span class="error" id="aantalgebakjes_error"></span>
+          </p>
+          <p>
+            <label for="aantalkoffie">Aantal koffie</label>
+            <input type="number" name="aantalkoffie" id="aantalkoffie" min="1" max="10">
+            <span class="error" id="aantalkoffie_error"></span>
+          </p>
+          <p>
+            <label for="bezorgen">Bezorgen?</label>
+            <input type="radio" name="bezorgen" class="bezorgen">Ja 
+            <input type="radio" name="bezorgen" class="bezorgen">Nee
+            <span class="error" id="bezorgen_error"></span>
+          </p>
+          <p>Indien ja, vul dan het bezorgadres in</p>
+          <p>
+            <label for="straat">Straat</label>
+            <input type="text" name="straat" id="straat" placeholder="uw straat en huisnummer">
+            <span class="error" id="straat_error"></span>
+          </p>
+          <p>
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode">
+            <span class="error" id="postcode_error"></span>
+          </p>
+          <p>
+            <label for="woonplaats">Woonplaats</label>
+            <input type="text" name="woonplaats" id="woonplaats">
+            <span class="error" id="woonplaats_error"></span>
+          </p>
+          <p>
+            <input type="submit" value="BESTEL" id="bestel-btn">
+          </p>
+      </form>
+    <footer>
+      <p>Built and copyrighted by Java the Hutt BVBA</p>
+    </footer>
+  </body>
+</html>
