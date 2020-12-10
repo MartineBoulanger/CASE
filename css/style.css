@@ -1,12 +1,69 @@
 body {
   margin: 0;
 }
-
+/* -------------------------------------------------------
+header
+--------------------------------------------------------*/
 header {
   background-color: #8a573a;
   color: #fff8e5;
-  display: flex;
-  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+.logo h1 {
+  color: #fff8e5;
+}
+
+.navigatie {
+  background-color: #8a573a;
+  color: #fff8e5;
+  text-align: center;
+  padding: 3px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  color: #fff8e5;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 15px;
+}
+
+a:hover {
+  color: #42a629;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------
+maincontent
+--------------------------------------------------------*/
+.home {
+  background-color: white;
+
+  padding: 20px 0px 20px 20px;
+}
+
+.intro {
+  width: 50%;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+h1,
+h2 {
+  color: #bf9a68;
+}
+
+button {
+  background-color: inherit;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #bf9a69;
+  border-radius: 15px;
+  color: #bf9a68;
 }
 
 footer {
