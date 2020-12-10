@@ -25,7 +25,7 @@ li {
   display: inline-block;
 }
 
-li a {
+a {
   color: #fff8e5;
   text-decoration: none;
   margin: 0px 20px;
@@ -40,10 +40,14 @@ a:hover {
 /* -------------------------------------------------------
 maincontent
 --------------------------------------------------------*/
-.home {
-  background-color: white;
+h1,
+h2 {
+  color: #bf9a68;
+}
 
+.home {
   padding: 20px 0px 20px 20px;
+  padding-bottom: 5em;
 }
 
 .intro {
@@ -56,13 +60,8 @@ maincontent
   margin-left: 5em;
 }
 
-h1,
-h2 {
-  color: #bf9a68;
-}
-
 .buttons {
-  margin-left: 20%;
+  margin-left: 20em;
 }
 
 button {
@@ -76,9 +75,8 @@ button {
   font-size: 20px;
 }
 
-button:hover {
-  background: #bf9a69;
-  color: white;
+button a {
+  color: #bf9a68;
 }
 
 .nieuwsbrief {
@@ -96,6 +94,43 @@ button:hover {
 #e-mail:hover {
   background: #bf9a69;
   color: white;
+}
+
+.koffie,
+.high-tea {
+  margin-left: 40em;
+}
+
+.broodjes {
+  margin-left: 33em;
+}
+
+.gebak {
+  margin-left: 44em;
+}
+
+.flex-container,
+.contact-container {
+  display: flex;
+}
+
+.contact-container {
+  margin-left: 20em;
+}
+
+.prijslijst td {
+  width: 10em;
+  padding: 5px;
+}
+
+.prijslijst tr:hover {
+  background-color: #bf9a68;
+  color: white;
+}
+
+.contact-block {
+  width: 20em;
+  margin-right: 10em;
 }
 
 footer {
