@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #8a573a;
+  color: #fff8e5;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #180e0d;
+  color: #bf9a68;
+  text-align: center;
+  padding: 30px;
+}
