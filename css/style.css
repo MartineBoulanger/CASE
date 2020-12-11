@@ -60,6 +60,7 @@ h2 {
 .maincontent{
   display: grid;
   grid-template-columns: 20% repeat(5, minmax(10em, auto));
+  padding-bottom: 10rem;
 }
 
 .home, .reservering, .bestellen {
@@ -188,8 +189,20 @@ iframe {
   height: 350px;
 }
 
+.reservering{
+  background: none;
+}
+
+.reservering .intro p{
+  margin-bottom: 5rem;
+}
+
 form {
   grid-column: 2 / 4;
+}
+
+.reserveer-form{
+  margin-bottom: 15rem;
 }
 
 .contact-form input {
@@ -211,5 +224,4 @@ footer {
   text-align: center;
   padding: 30px;
   grid-column: 1 / -1;
-  margin-top: 15rem;
 }
