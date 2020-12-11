@@ -4,6 +4,11 @@ body {
   margin: 0;
   font-size: 20px;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* -------------------------------------------------------
 header
 --------------------------------------------------------*/
@@ -60,14 +65,12 @@ h2 {
 .maincontent{
   display: grid;
   grid-template-columns: 20% repeat(5, minmax(10em, auto));
-  padding-bottom: 10rem;
 }
 
 .home, .reservering, .bestellen {
-  padding: 20px 0px 20px 20px;
   padding-bottom: 5em;
   background-image: url("../img/koffie_background_transparant.png");
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -189,20 +192,18 @@ iframe {
   height: 350px;
 }
 
-.reservering{
-  background: none;
-}
-
 .reservering .intro p{
   margin-bottom: 5rem;
 }
 
 form {
-  grid-column: 2 / 4;
+  grid-column: 2 / span 2;
+  margin: auto;
+  margin-bottom: 5rem;
 }
 
-.reserveer-form{
-  margin-bottom: 15rem;
+.contact-form{
+  width: 75%; 
 }
 
 .contact-form input {
@@ -216,6 +217,12 @@ form {
 textarea {
   border: 1px solid #bf9a69;
   padding: 10px;
+  width: 100%;
+}
+
+#nieuwsbrief{
+  width: 20px;
+  float: left;
 }
 
 footer {
