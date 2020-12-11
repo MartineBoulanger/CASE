@@ -1,8 +1,11 @@
 @import "normalize.css";
+@import url("https://use.typekit.net/mga5dkf.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 body {
   margin: 0;
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -29,9 +32,19 @@ header {
   color: #fff8e5;
   padding: 10px;
   text-align: center;
+  background-image: url('../img/header_achtergrond.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .logo h1 {
   color: #fff8e5;
+  font-family: bickham-script-pro-3, sans-serif;
+  font-size: 5em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.logo h2{
+  font-size: 1em;
 }
 
 .navigatie {
@@ -39,6 +52,11 @@ header {
   color: #fff8e5;
   text-align: center;
   padding: 0.1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .navigatie li {
@@ -86,6 +104,7 @@ a:hover {
 .intro p {
   margin-left: 5em;
   width: 50%;
+  line-height: 1.5;
 }
 
 .slideshow {
@@ -145,6 +164,7 @@ button {
   border: none;
   margin: 6rem 0;
   background: transparent;
+  margin-left: 5.5rem;
 }
 
 button a,
@@ -177,7 +197,6 @@ button a:hover,
 
 .reviews {
   grid-column: 2 / 6;
-  width: 40em;
   padding: 10px;
 }
 
@@ -185,6 +204,7 @@ button a:hover,
   float: left;
   margin-right: 30px;
   margin-bottom: 5rem;
+  padding: 10px;
   border: 1px solid #42a629;
 }
 
@@ -206,6 +226,7 @@ button a:hover,
   padding: 0.8em;
   border: 1px solid #42a629;
   border-radius: 5px;
+  outline: 1px solid transparent;
 }
 
 #e-mail:focus,
@@ -328,13 +349,52 @@ textarea {
   margin-top: 2rem;
   float: right;
   cursor: pointer;
+  margin-right: 0;
 }
 /* contact pagina einde */
 
 /* reservering en bestelling pagina begin */
-.reservering .intro p {
+.reservering, .bestellen{
   margin-bottom: 5rem;
 }
+
+.reservering .intro p, .bestellen .intro p{
+  margin-bottom: 5rem;
+}
+
+.reservering form{
+  grid-column: 2 / span 3;
+  margin-top: 5rem;
+}
+
+.bestellen form{
+  grid-column: 2 / span 3;
+  margin-top: 5rem;
+}
+
+.bezorgen{
+  margin: 0;
+}
+
+.reservering input, select, .bestellen input{
+  float: right;
+  margin-left: 4rem;
+  width: 15em;
+  border: 1px solid #bf9a68;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.bestellen select{
+  width: 7em;
+  margin-left: .2rem;
+}
+
+.keuze input{
+  width: 100px;
+  margin-left: 0;
+}
+
 /* reservering en bestelling pagina einde */
 
 /* footer */

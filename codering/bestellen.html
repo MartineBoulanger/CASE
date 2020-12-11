@@ -6,7 +6,7 @@
     <meta name="author" content="Martine Boulanger, Steven Kelber" />
     <meta description="reserveringen maken" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Bestelling</title>
+    <title>Bestellen</title>
   </head>
   <body>
     <header>
@@ -29,24 +29,24 @@
       <div class="intro">
         <h1>Bestelling</h1>
         <p>
-          Wij doen ook bestellinegn!
-          U kunt bij ons belegde broodjes, gebak, brood en koffie bestellen, wij maken uw bestel klaar en dan kunt u uw bestelling ophalen, wilt u ze liever laten bezorgen? Dat kan! Wij doen ook bezorgen.
+          Wij doen ook bestellingen opnemen!
+          U kunt bij ons belegde broodjes, gebak, brood en koffie bestellen, wij maken uw bestel klaar en dan kunt u uw bestelling bij ons komen ophalen, wilt u ze liever laten bezorgen? Dat kan! Wij doen ook bezorgen. Voor bestellingen groter dan 10 stuks, of verschillende soorten belegde broodjes en gebakjes, gelieve uw bestelling dan telefonisch te doen.
         </p>
       </div>
       <form id="form-bestellen" class="bestel-form">
           <p>
             <label for="naam">Naam</label>
-            <input type="text" name="naam" id="naam" placeholder="uw volledige naam">*
+            <input type="text" name="naam" id="naam" placeholder="uw volledige naam">
             <span class="error" id="naam_error"></span>
           </p>
           <p>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">*
+            <input type="email" name="email" id="email">
             <span class="error" id="email_error"></span>
           </p>
           <p>
             <label for="tel">Tel</label>
-            <input type="tel" name="tel" id="tel">*
+            <input type="tel" name="tel" id="tel">
             <span class="error" id="tel_error"></span>
           </p>
           <p>
@@ -124,10 +124,10 @@
             <input type="number" name="aantalkoffie" id="aantalkoffie" min="1" max="10">
             <span class="error" id="aantalkoffie_error"></span>
           </p>
-          <p>
-            <label for="bezorgen">Bezorgen?</label>
-            <input type="radio" name="bezorgen" class="bezorgen">Ja 
-            <input type="radio" name="bezorgen" class="bezorgen">Nee
+          <p class="keuze">
+            <label for="bezorgen">Bezorgen?
+              <input type="radio" name="bezorgen" class="bezorgen"> Ja <input type="radio" name="bezorgen" class="bezorgen"> Nee
+            </label>
             <span class="error" id="bezorgen_error"></span>
           </p>
           <p>Indien ja, vul dan het bezorgadres in</p>
