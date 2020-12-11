@@ -49,6 +49,10 @@ h2 {
   margin: 4rem 0;
 }
 
+h1{ font-size: 2.5em; }
+
+h2{ font-size: 1.7em; }
+
 .home {
   padding: 20px 0px 20px 20px;
   padding-bottom: 5em;
@@ -68,6 +72,7 @@ h2 {
 
 .intro p {
   margin-left: 5em;
+  width: 50%;
 }
 
 .buttons {
@@ -75,17 +80,25 @@ h2 {
   margin-top: 5rem;
 }
 
+button {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: none;
+  margin-bottom: 5rem;
+}
+
 button a{
-  display: block;
+  display: inline-block;
   font-weight: bold;
-  width: 100%;
+  width: 10em;
   height: 100%;
-  text-align: center;
-  color: #bf9a68;
   background-color: #fff8e5;
   border: 1px solid #bf9a69;
   border-radius: 15px;
-  padding: 0.4em;
+  color: #bf9a68;
+  padding: 0.5em;
+  margin-right: 5rem;
+  margin-left: 0;
 }
 
 button a:hover{
@@ -96,14 +109,15 @@ button a:hover{
 }
 
 .nieuwsbrief {
+  margin-top: 5rem;
   margin-left: 20em;
 }
 
 #e-mail {
   width: 25em;
   padding: 0.4em;
-  border: 1px solid #bf9a69;
-  border-radius: 15px;
+  border: 1px solid #42a629;
+  border-radius: 5px;
 }
 
 #e-mail:focus,
