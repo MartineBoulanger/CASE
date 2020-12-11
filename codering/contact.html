@@ -25,19 +25,20 @@
         </ul>
       </nav>
     </div>
-    <div class="maincontent">
+    <div class="maincontent contact">
       <div class="intro">
         <h1>Contact</h1>
       </div>
-      <div class="contact-container">
-        <div class="contact-block"">
+
+        <div class="contact-block blok1">
         <h2>titel</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam
           iusto eveniet iure ipsum illum molestiae doloribus vero et nisi!
         </p>
       </div>
-      <div class="contact-block">
+
+      <div class="contact-block blok2">
         <h2>titel</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -45,12 +46,11 @@
           nihil. Molestiae.
         </p>
       </div>
-    </div>
 
-    <div class="maps"></div>
     <div class="intro">
       <h2>Titel</h2>
     </div>
+
     <div class="maps">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.713784663169!2d5.3264005165114!3d51.03990677956103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c125b1b1457655%3A0x645b166be3cb7e94!2sCVO%20De%20Verdieping!5e0!3m2!1snl!2sbe!4v1607678123761!5m2!1snl!2sbe"
@@ -63,26 +63,40 @@
         tabindex="0"
       ></iframe>
     </div>
+
     <div class="intro">
       <h2>Titel formulier</h2>
     </div>
-    <form action="">
-      <p>Voornaam:<input type="text" class="voornaam" /></p>
-      <p>Naam: <input type="text" class="naam" /></p>
-      <p>Emailadres: <input type="email" class="email" /></p>
-      <p>Onderwerp: <input type="text" class="onderwerp" /></p>
-      <textarea
-        name="textarea"
-        id="textarea"
-        cols="30"
-        rows="10"
-        placeholder="Hier uw bericht"
-      ></textarea>
-      <label class="nieuwsbrief">
-        <p>Wilt u onze nieuwsbrief ontvangen? <input type="checkbox" /></p>
-      </label>
+
+    <form class="contact-form" action="formulier">
       <p>
-        <button>Zend</button>
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" name="voornaam" id="voornaam">
+        <span class="error" id="voornaam_error"></span>
+      </p>
+      <p>
+        <label for="naam">Naam:</label>
+        <input type="text" name="naam" id="naam">
+        <span class="error" id="naam_error"></span>
+      </p>
+      <p>
+        <label for="email">Emailadres:</label>
+        <input type="text" name="email" id="email">
+        <span class="error" id="email_error"></span>
+      </p>
+      <p>
+        <label for="onderwerp">Onderwerp:</label>
+        <input type="text" name="onderwerp" id="onderwerp">
+        <span class="error" id="onderwerp_error"></span>
+      </p>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Hier uw bericht"></textarea>
+      <span class="error" id="textarea_error"></span>
+      <p>
+        <label for="nieuwsbrief">Wilt u onze nieuwsbrief ontvangen?</label>
+        <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief" />
+        <span class="error" id="nieuwsbrief_error"></span>
+      <p>
+        <input type="submit" value="Zend" id="zend-btn">
       </p>
     </form>
 
