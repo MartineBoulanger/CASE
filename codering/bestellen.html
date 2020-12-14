@@ -1,362 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Martine Boulanger, Steven Kelber" />
     <meta description="reserveringen maken" />
-    <link rel="stylesheet" href="../css/style.css" />
     <title>Bestellen</title>
-  </head>
-  <body>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
     <header>
-      <div class="logo">
-        <h1>Java the Hutt</h1>
-        <h2>De beste koffie en broodjes van België</h2>
-      </div>
+        <div class="logo">
+            <h1>Java the Hutt</h1>
+            <h2>De beste koffie en broodjes van België</h2>
+        </div>
     </header>
     <div class="navigatie">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="koffie.html">Koffie</a></li>
-          <li><a href="bakkerij.html">Bakkerij</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="koffie.html">Koffie</a></li>
+                <li><a href="bakkerij.html">Bakkerij</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="maincontent bestellen">
-      <div class="intro">
-        <h1>Bestelling</h1>
-        <p>
-          Wij doen ook bestellingen opnemen! U kunt bij ons belegde broodjes,
-          gebak, brood en koffie bestellen, wij maken uw bestel klaar en dan
-          kunt u uw bestelling bij ons komen ophalen, wilt u ze liever laten
-          bezorgen? Dat kan! Wij doen ook bezorgen. Voor bestellingen groter dan
-          10 stuks, of verschillende soorten belegde broodjes en gebakjes,
-          gelieve uw bestelling dan telefonisch te doen.
-        </p>
-      </div>
-      <form id="form-bestellen" class="bestel-form">
-        <p>
-          <label for="naam">Naam</label>
-          <input
-            type="text"
-            name="naam"
-            id="naam"
-            placeholder="uw volledige naam"
-          />
-          <span class="error" id="naam_error"></span>
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-          <span class="error" id="email_error"></span>
-        </p>
-        <p>
-          <label for="tel">Tel</label>
-          <input type="tel" name="tel" id="tel" />
-          <span class="error" id="tel_error"></span>
-        </p>
-        <div class="bestelbroodjes">
-          <h2>Broodjes</h2>
-          <p>
-            <label for="broodje1"
-              >Broodje 1
-              <input type="checkbox" id="broodje1" value="broodje1" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje2"
-              >broodje2
-              <input type="checkbox" id="broodje2" value="broodje2" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje3"
-              >broodje3
-              <input type="checkbox" id="broodje3" value="broodje3" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje4"
-              >broodje4
-              <input type="checkbox" id="broodje4" value="broodje4" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje5"
-              >broodje5
-              <input type="checkbox" id="broodje5" value="broodje5" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje6"
-              >broodje6
-              <input type="checkbox" id="broodje6" value="broodje6" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje7"
-              >broodje7
-              <input type="checkbox" id="broodje7" value="broodje7" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje8"
-              >broodje8
-              <input type="checkbox" id="broodje8" value="broodje8" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="broodje9"
-              >broodje9
-              <input type="checkbox" id="broodje9" value="broodje9" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
+        <div class="intro">
+            <h1>Bestelling</h1>
+            <p>
+                Wij doen ook bestellingen opnemen! U kunt bij ons belegde broodjes,
+                gebak, brood en koffie bestellen, wij maken uw bestel klaar en dan
+                kunt u uw bestelling bij ons komen ophalen, wilt u ze liever laten
+                bezorgen? Dat kan! Wij doen ook bezorgen. Voor bestellingen groter dan
+                10 stuks, of verschillende soorten belegde broodjes en gebakjes,
+                gelieve uw bestelling dan telefonisch te doen.
+            </p>
         </div>
-        <div class="bestelgebak">
-          <h2>Gebak</h2>
-          <p>
-            <label for="gebak1"
-              >Gebak1
-              <input type="checkbox" id="gebak1" value="gebak1" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak2"
-              >Gebak2
-              <input type="checkbox" id="gebak2" value="gebak2" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak3"
-              >Gebak3
-              <input type="checkbox" id="gebak3" value="gebak3" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak4"
-              >Gebak4
-              <input type="checkbox" id="gebak4" value="gebak4" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak5"
-              >Gebak5
-              <input type="checkbox" id="gebak5" value="gebak5" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak6"
-              >Gebak6
-              <input type="checkbox" id="gebak6" value="gebak6" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak7"
-              >Gebak7
-              <input type="checkbox" id="gebak7" value="gebak7" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak8"
-              >Gebak8
-              <input type="checkbox" id="gebak8" value="gebak8" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="gebak9"
-              >Gebak9
-              <input type="checkbox" id="gebak9" value="gebak9" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-        </div>
-        <div class="bestelkoffie">
-          <h2>Koffie</h2>
-          <p>
-            <label for="koffie1"
-              >koffie1
-              <input type="checkbox" id="koffie1" value="koffie1" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie2"
-              >koffie2
-              <input type="checkbox" id="koffie2" value="koffie2" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie3"
-              >koffie3
-              <input type="checkbox" id="koffie3" value="koffie3" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie4"
-              >koffie4
-              <input type="checkbox" id="koffie4" value="koffie4" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie5"
-              >koffie5
-              <input type="checkbox" id="koffie5" value="koffie5" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie6"
-              >koffie6
-              <input type="checkbox" id="koffie6" value="koffie6" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie7"
-              >koffie7
-              <input type="checkbox" id="koffie7" value="koffie7" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie8"
-              >koffie8
-              <input type="checkbox" id="koffie8" value="koffie8" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="koffie9"
-              >koffie9
-              <input type="checkbox" id="koffie9" value="koffie9" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-        </div>
-        <div class="bestelbrood">
-          <h2>Brood</h2>
-          <p>
-            <label for="brood1"
-              >Brood1
-              <input type="checkbox" id="brood1" value="brood1" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood2"
-              >Brood2
-              <input type="checkbox" id="brood2" value="brood2" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood3"
-              >Brood3
-              <input type="checkbox" id="brood3" value="brood3" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood4"
-              >Brood4
-              <input type="checkbox" id="brood4" value="brood4" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood5"
-              >Brood5
-              <input type="checkbox" id="brood5" value="brood5" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood6"
-              >Brood6
-              <input type="checkbox" id="brood6" value="brood6" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood7"
-              >Brood7
-              <input type="checkbox" id="brood7" value="brood7" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood8"
-              >Brood8
-              <input type="checkbox" id="brood8" value="brood8" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-          <p>
-            <label for="brood9"
-              >Brood9
-              <input type="checkbox" id="brood9" value="brood9" />
-              <input type="number" min="1" max="10" class="aantal" />
-            </label>
-          </p>
-        </div>
-
-        <p class="keuze">
-          <label for="bezorgen">Bezorgen?</label>
-          <input type="radio" name="bezorgen" class="bezorgen" />Ja
-          <input type="radio" name="bezorgen" class="bezorgen" />Nee
-          <span class="error" id="bezorgen_error"></span>
-        </p>
-        <p>Indien ja, vul dan het bezorgadres in</p>
-        <p>
-          <label for="straat">Straat</label>
-          <input
-            type="text"
-            name="straat"
-            id="straat"
-            placeholder="uw straat en huisnummer"
-          />
-          <span class="error" id="straat_error"></span>
-        </p>
-        <p>
-          <label for="postcode">Postcode</label>
-          <input type="text" name="postcode" id="postcode" />
-          <span class="error" id="postcode_error"></span>
-        </p>
-        <p>
-          <label for="woonplaats">Woonplaats</label>
-          <input type="text" name="woonplaats" id="woonplaats" />
-          <span class="error" id="woonplaats_error"></span>
-        </p>
-        <p>
-          <input type="submit" value="Bestel" id="bestel-btn" />
-        </p>
-      </form>
+        <form id="form-bestellen" class="bestel-form">
+            <div class="bestelcontactpersoon">
+                <p>
+                    <label for="naam">Naam</label>
+                    <input type="text" name="naam" id="naam" placeholder="uw volledige naam" />
+                    <span class="error" id="naam_error"></span>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                    <span class="error" id="email_error"></span>
+                </p>
+                <p>
+                    <label for="tel">Tel</label>
+                    <input type="tel" name="tel" id="tel" />
+                    <span class="error" id="tel_error"></span>
+                </p>
+            </div>
+            <div class="bestelbroodjes">
+                <h2>Broodjes</h2>
+                <p>
+                    <label for="broodje1">Broodje 1
+                        <input type="checkbox" id="broodje1" value="broodje1" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje2">broodje2
+                        <input type="checkbox" id="broodje2" value="broodje2" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje3">broodje3
+                        <input type="checkbox" id="broodje3" value="broodje3" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje4">broodje4
+                        <input type="checkbox" id="broodje4" value="broodje4" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje5">broodje5
+                        <input type="checkbox" id="broodje5" value="broodje5" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje6">broodje6
+                        <input type="checkbox" id="broodje6" value="broodje6" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje7">broodje7
+                        <input type="checkbox" id="broodje7" value="broodje7" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje8">broodje8
+                        <input type="checkbox" id="broodje8" value="broodje8" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="broodje9">broodje9
+                        <input type="checkbox" id="broodje9" value="broodje9" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+            </div>
+            <div class="bestelgebak">
+                <h2>Gebak</h2>
+                <p>
+                    <label for="gebak1">Gebak1
+                        <input type="checkbox" id="gebak1" value="gebak1" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak2">Gebak2
+                        <input type="checkbox" id="gebak2" value="gebak2" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak3">Gebak3
+                        <input type="checkbox" id="gebak3" value="gebak3" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak4">Gebak4
+                        <input type="checkbox" id="gebak4" value="gebak4" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak5">Gebak5
+                        <input type="checkbox" id="gebak5" value="gebak5" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak6">Gebak6
+                        <input type="checkbox" id="gebak6" value="gebak6" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak7">Gebak7
+                        <input type="checkbox" id="gebak7" value="gebak7" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak8">Gebak8
+                        <input type="checkbox" id="gebak8" value="gebak8" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="gebak9">Gebak9
+                        <input type="checkbox" id="gebak9" value="gebak9" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+            </div>
+            <div class="bestelkoffie">
+                <h2>Koffie</h2>
+                <p>
+                    <label for="koffie1">koffie1
+                        <input type="checkbox" id="koffie1" value="koffie1" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie2">koffie2
+                        <input type="checkbox" id="koffie2" value="koffie2" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie3">koffie3
+                        <input type="checkbox" id="koffie3" value="koffie3" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie4">koffie4
+                        <input type="checkbox" id="koffie4" value="koffie4" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie5">koffie5
+                        <input type="checkbox" id="koffie5" value="koffie5" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie6">koffie6
+                        <input type="checkbox" id="koffie6" value="koffie6" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie7">koffie7
+                        <input type="checkbox" id="koffie7" value="koffie7" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie8">koffie8
+                        <input type="checkbox" id="koffie8" value="koffie8" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="koffie9">koffie9
+                        <input type="checkbox" id="koffie9" value="koffie9" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+            </div>
+            <div class="bestelbrood">
+                <h2>Brood</h2>
+                <p>
+                    <label for="brood1">Brood1
+                        <input type="checkbox" id="brood1" value="brood1" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood2">Brood2
+                        <input type="checkbox" id="brood2" value="brood2" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood3">Brood3
+                        <input type="checkbox" id="brood3" value="brood3" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood4">Brood4
+                        <input type="checkbox" id="brood4" value="brood4" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood5">Brood5
+                        <input type="checkbox" id="brood5" value="brood5" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood6">Brood6
+                        <input type="checkbox" id="brood6" value="brood6" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood7">Brood7
+                        <input type="checkbox" id="brood7" value="brood7" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood8">Brood8
+                        <input type="checkbox" id="brood8" value="brood8" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+                <p>
+                    <label for="brood9">Brood9
+                        <input type="checkbox" id="brood9" value="brood9" />
+                        <input type="number" min="1" max="10" class="aantal" />
+                    </label>
+                </p>
+            </div>
+            <div class="bezorgkeuze">
+                <p class="keuze">
+                    <label for="bezorgen">Bezorgen?</label>
+                    <input type="radio" name="bezorgen" class="bezorgen" /> Ja
+                    <input type="radio" name="bezorgen" class="bezorgen" /> Nee
+                    <span class="error" id="bezorgen_error"></span>
+                </p>
+            </div>
+            <div class="leveradres">
+                <p>Indien ja, vul dan het bezorgadres in</p>
+                <p>
+                    <label for="straat">Straat</label>
+                    <input type="text" name="straat" id="straat" placeholder="uw straat en huisnummer" />
+                    <span class="error" id="straat_error"></span>
+                </p>
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode" id="postcode" />
+                    <span class="error" id="postcode_error"></span>
+                </p>
+                <p>
+                    <label for="woonplaats">Woonplaats</label>
+                    <input type="text" name="woonplaats" id="woonplaats" />
+                    <span class="error" id="woonplaats_error"></span>
+                </p>
+                <p>
+                    <input type="submit" value="Bestel" id="bestel-btn" />
+                </p>
+            </div>
+        </form>
     </div>
     <footer>
-      <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
+        <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
     </footer>
-  </body>
+</body>
+
 </html>
