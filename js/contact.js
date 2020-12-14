@@ -109,7 +109,7 @@ function controle() {
 
   //controle onderwerp
   if (onderwerpTxt.length == 0) {
-    document.getElementById("onderwer_error").innerHTML =
+    document.getElementById("onderwerp_error").innerHTML =
       "Gelieve een onderwerp in te geven.";
     allesCorrectIngevuld = false;
   } else {

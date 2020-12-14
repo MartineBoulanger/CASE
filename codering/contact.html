@@ -9,17 +9,7 @@
     <link rel="stylesheet" href="../css/style.css" />
       <script type="text/javascript" src="../js/contact.js"></script>
     <title>Contact</title>
-     <style>
-      .error {
-        color: red;
-      }
-
-      label {
-        display: inline-block;
-        text-align: right;
-        width: 200px;
-      }
-    </style>
+    
 </head>
 
 <body>
@@ -71,7 +61,7 @@
         <div class="intro">
             <h2>Titel formulier</h2>
         </div>
-        <form class="contact-form" action="formulier">
+        <form class="contact-form" id="formulier">
             <p>
                 <label for="voornaam">Voornaam:</label>
                 <input type="text" name="voornaam" id="voornaam">
@@ -96,7 +86,7 @@
             <span class="error" id="textarea_error"></span>
             </p>
             <p>
-                <input type="submit" value="Zend" id="zend-btn" onclick="controle();">
+                <input type="button" value="Zend" id="zend-btn" onclick="controle()">
             </p>
         </form>
     </div>
