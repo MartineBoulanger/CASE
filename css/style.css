@@ -44,7 +44,7 @@ header {
   padding: 10px;
   text-align: center;
   background-image: url('../img/header_achtergrond.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -372,8 +372,12 @@ textarea {
 }
 
 .reservering form{
-  grid-column: 2 / 6;
+  grid-column: 1 / -1;
   margin-top: 5rem;
+}
+
+.bestellen{
+  background-image: none;
 }
 
 .bestellen form{
@@ -382,10 +386,7 @@ textarea {
   margin: auto;
 }
 
-
-
-.reservering input, select, .bestelcontactpersoon input{
-  /*float: right;*/
+.reservering input, select, .bestelcontactpersoon input, .leveradres input{
   margin-left: 4rem;
   width: 15em;
   border: 1px solid #bf9a68;
@@ -393,17 +394,21 @@ textarea {
   border-radius: 5px;
 }
 
-/*.bestelcontactpersoon input{
-  margin-left: 2rem;
-  width: 250px;
-  border: 1px solid #bf9a68;
-  padding: 5px;
-  border-radius: 5px;
-}*/
+.leveradres{
+  float: right;
+  margin-bottom: 6rem;
+}
 
-.keuze input{
-  width: 15px; 
+.leveradres p:first-child{
+  margin-bottom: 3rem;
+}
+
+.bezorgkeuze input{
   margin-left: 15px;
+}
+
+.bezorgkeuze label{
+  font-weight: 700;
 }
 
 .bestelbroodjes, .bestelgebak, .bestelkoffie, .bestelbrood{
@@ -411,9 +416,11 @@ textarea {
   width: 300px;
   margin: 50px;
   margin: 2rem 0;
-  border: 1px solid #8a573a;
-  border-radius: 5px;
+  margin-right: 25px;
+  border: 2px solid #42a629;
+  border-radius: 15px;
   box-sizing: border-box;
+  background-color: rgba(191, 154, 105, .2);
 }
 
 .bestelbrood{
@@ -423,6 +430,9 @@ textarea {
 .bestelbroodjes input, .bestelgebak input, .bestelkoffie input, .bestelbrood input{
   max-width: 30px;
   outline: 1px solid transparent;
+  border: 1px solid #bf9a68;
+  border-radius: 5px;
+  margin-left: 1rem;
 }
 
 .bestelbroodjes label, .bestelgebak label, .bestelkoffie label, .bestelbrood label{
@@ -431,12 +441,11 @@ textarea {
 }
 
 .bestelbroodjes h2, .bestelgebak h2, .bestelkoffie h2, .bestelbrood h2{
-  font-size: 1em;
+  font-size: 1.5em;
   padding-left: 50px;
   margin-right: 1rem;
   padding-bottom: 1em;
 }
-
 /* reservering en bestelling pagina einde */
 
 /* footer */
@@ -445,6 +454,5 @@ footer {
   color: #bf9a68;
   text-align: center;
   padding: 15px;
-  /*grid-column: 1 / -1;*/
   font-size: .7rem;
 }
