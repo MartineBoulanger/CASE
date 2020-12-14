@@ -26,6 +26,18 @@ form {
   margin-bottom: 7rem;
 }
 
+.error {
+  color: #B10000;
+  font-style: italic;
+  padding-left: 2em;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 250px;
+}
+
 /* header begin */
 header {
   background-color: #8a573a;
