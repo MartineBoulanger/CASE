@@ -216,10 +216,11 @@ button a:hover,
   float: left;
   margin-right: 30px;
   margin-bottom: 5rem;
-  padding: 10px;
+  padding: 20px;
   border: 2px solid #42a629;
   background-color: rgba(191, 154, 105, .2);
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .nieuwsbrief {
@@ -371,13 +372,14 @@ textarea {
 }
 
 .reservering form{
-  grid-column: 2 / 5;
+  grid-column: 2 / 6;
   margin-top: 5rem;
 }
 
 .bestellen form{
-  grid-column: 2 / 5;
+  grid-column: 1 / -1;
   margin-top: 5rem;
+  margin: auto;
 }
 
 .reservering input, select, .bestellen input{
@@ -389,14 +391,40 @@ textarea {
   border-radius: 5px;
 }
 
-.bestellen select{
-  width: 7em;
-  margin-left: .2rem;
+.keuze input{
+  width: 15px; 
+  margin-left: 0;
 }
 
-.keuze input{
-  width: 100px;
+.bestelbroodjes, .bestelgebak, .bestelkoffie, .bestelbrood{
+  float: left;
+  width: 300px;
+  margin: 50px;
+  margin: 2rem 0;
+  border: 1px solid #8a573a;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.bestelbrood{
+  margin-right: 0;
+}
+
+.bestelbroodjes input, .bestelgebak input, .bestelkoffie input, .bestelbrood input{
+  max-width: 30px;
+  outline: 1px solid transparent;
+}
+
+.bestelbroodjes label, .bestelgebak label, .bestelkoffie label, .bestelbrood label{
+  margin: 0;
   margin-left: 0;
+}
+
+.bestelbroodjes h2, .bestelgebak h2, .bestelkoffie h2, .bestelbrood h2{
+  font-size: 1em;
+  padding-left: 50px;
+  margin-right: 1rem;
+  padding-bottom: 1em;
 }
 
 /* reservering en bestelling pagina einde */
