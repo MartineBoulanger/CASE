@@ -6,6 +6,8 @@ let telBestelTxt;
 let straatBestelTxt;
 let postcodeBestelTxt;
 let woonplaatsBestelTxt;
+let bezorgJa;
+let bezorgNee;
 let fout = true;
 
 function controleerNaam() {
@@ -86,6 +88,9 @@ function controle() {
     straatBestelTxt = document.getElementById("straat").value;
     postcodeBestelTxt = document.getElementById("postcode").value;
     woonplaatsBestelTxt = document.getElementById("woonplaats").value;
+    bezorgJa = document.getElementById("bezorgja").checked;
+    bezorgNee = document.getElementById("bezorgnee").checked;
+
 
 
 
@@ -110,16 +115,30 @@ function controle() {
         controleerTel();
     }
 
-    if (straatBestelTxt) {
-        controleerStraat();
+    if (bezorgJa == false && bezorgNee == false) {
+    	document.getElementById("bezorgen_error").innerHTML = "Verplicht!";
+    	fout = false;
     }
 
-    if (postcodeBestelTxt) {
-        controleerPostcode();
-    }
-
-    if (woonplaatsBestelTxt) {
-        controleerWoonplaats();
-    }
+    if (bezorgJa == true) {
+        if (straatBestelTxt.length == 0) {
+        	document.getElementById("straat_error").innerHTML = "Verplicht!";
+        	fout = false;
+        } else {
+        	controleerStraat();
+        }
+        if (postcodeBestelTxt.length == 0) {
+        	document.getElementById("postcode_error").innerHTML = "Verplicht!";
+        	fout = false;
+        } else {
+        	controleerPostcode();
+        }
+        if (woonplaatsBestelTxt.length == 0) {
+        	document.getElementById("woonplaats_error").innerHTML = "Verplicht!";
+        	fout = false;
+        } else {
+        	controleerWoonplaats();
+        }
+    } 
 
 }
