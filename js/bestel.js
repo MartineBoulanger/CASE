@@ -8,6 +8,18 @@ let postcodeBestelTxt;
 let woonplaatsBestelTxt;
 let bezorgJa;
 let bezorgNee;
+let broodjesArray;
+let telBroodjes;
+let broodje1;
+let broodje2;
+let broodje3;
+let broodje4;
+let broodje5;
+let broodje6;
+let broodje7;
+let broodje8;
+let broodje9;
+let aantalBroodjes;
 let fout = true;
 
 function controleerNaam() {
@@ -90,7 +102,8 @@ function controle() {
     woonplaatsBestelTxt = document.getElementById("woonplaats").value;
     bezorgJa = document.getElementById("bezorgja").checked;
     bezorgNee = document.getElementById("bezorgnee").checked;
-
+    broodjesArray = document.getElementByClass("broodjeschecked");
+    telBroodjes = 0;
 
 
 
@@ -113,6 +126,51 @@ function controle() {
         fout = false;
     } else {
         controleerTel();
+    }
+
+    let lengteBroodjes = broodjesArray.length
+    for (let i = 0; i < lengteBroodjes; i++) {
+        if (broodjesArray[i].checked) {
+            telBroodjes++;
+        }
+    }
+    if (broodjesArray.checked) {
+        broodje1 = "naam " + broodjesArray[0].checked;
+        broodje2 = "naam " + broodjesArray[1].checked;
+        broodje3 = "naam " + broodjesArray[2].checked;
+        broodje4 = "naam " + broodjesArray[3].checked;
+        broodje5 = "naam " + broodjesArray[4].checked;
+        broodje6 = "naam " + broodjesArray[5].checked;
+        broodje7 = "naam " + broodjesArray[6].checked;
+        broodje8 = "naam " + broodjesArray[7].checked;
+        broodje9 = "naam " + broodjesArray[8].checked;
+        if (broodje1.checked) {
+        	aantalBroodjes = document.getElementById("broodje1").value;
+        }
+        if (broodje2.checked) {
+        	aantalBroodjes = document.getElementById("broodje2").value;
+        }
+        if (broodje3.checked) {
+        	aantalBroodjes = document.getElementById("broodje3").value;
+        }
+        if (broodje4.checked) {
+        	aantalBroodjes = document.getElementById("broodje4").value;
+        }
+        if (broodje5.checked) {
+        	aantalBroodjes = document.getElementById("broodje5").value;
+        }
+        if (broodje6.checked) {
+        	aantalBroodjes = document.getElementById("broodje6").value;
+        }
+        if (broodje7.checked) {
+        	aantalBroodjes = document.getElementById("broodje7").value;
+        }
+        if (broodje8.checked) {
+        	aantalBroodjes = document.getElementById("broodje8").value;
+        }
+        if (broodje9.checked) {
+        	aantalBroodjes = document.getElementById("broodje9").value;
+        }
     }
 
     if (bezorgJa == false && bezorgNee == false) {
@@ -140,5 +198,55 @@ function controle() {
         	controleerWoonplaats();
         }
     } 
+
+
+    if (fout) {
+    	let link = "mailto:" + encodeURIComponent("bestel@javathehutt.be;")
+			+ encodeURIComponent(document.getElementById('email').value)
+			+ "?cc=" + encodeURIComponent("info@javathehutt.be;")
+			+ "&subject=" + encodeURIComponent("Bestelling")
+			+ "&body="
+			+ "Naam: "
+			+ encodeURIComponent(naamBestelTxt)
+			+ encodeURIComponent("\r\n")
+			+ "Email: "
+			+ encodeURIComponent(emailBestelTxt)
+			+ encodeURIComponent("\r\n")
+			+ "Telefoonnummer: "
+			+ encodeURIComponent(telBestelTxt)
+			+ encodeURIComponent("\r\n\n")
+			+ "Ik wil graag het volgende bestellen: "
+			+ encodeURIComponent("\r\n\n")
+			+ "Broodje(s): "
+			+ encodeURIComponent(broodje1) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje2) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje3) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje4) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje5) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje6) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje7) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje8) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n")
+			+ encodeURIComponent(broodje9) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
+			+ encodeURIComponent("\r\n\n")
+			+ "Bezorgen? "
+			+ encodeURIComponent(bezorgJa) + encodeURIComponent(bezorgNee)
+			+ encodeURIComponent("\r\n\n")
+			+ "Indien ja, dit is mijn bezorgadres: "
+			+ encodeURIComponent("\r\n")
+			+ "Straat en huisnr.: "
+			+ encodeURIComponent(straatBestelTxt)
+			+ encodeURIComponent("\r\n")
+			+ "Postcode en woonplaats: "
+			+ encodeURIComponent(postcodeBestelTxt) + encodeURIComponent(woonplaatsBestelTxt);
+		window.location.href = link;
+    }
 
 }
