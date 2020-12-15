@@ -8,18 +8,15 @@ let postcodeBestelTxt;
 let woonplaatsBestelTxt;
 let bezorgJa;
 let bezorgNee;
-let broodjesArray;
-let telBroodjes;
-let broodje1;
-let broodje2;
-let broodje3;
-let broodje4;
-let broodje5;
-let broodje6;
-let broodje7;
-let broodje8;
-let broodje9;
-let aantalBroodjes;
+let bezorgen;
+let broodjes;
+let broodjeslijst;
+let gebakjes;
+let gebakjeslijst;
+let koffies;
+let koffielijst;
+let broden;
+let brodenlijst;
 let fout = true;
 
 function controleerNaam() {
@@ -93,6 +90,43 @@ function controleerWoonplaats() {
     }
 }
 
+function geselecteerdeBroodjes(name) {
+	let broodjescheck = document.querySelectorAll('input[name="bestelBroodjes"]:checked');
+	broodjes = [];
+    broodjescheck.forEach((checkbox) => {
+    	broodjes.push(checkbox.value);
+    });
+    return broodjes;
+}
+
+function geselecteerdeGebakjes(name) {
+	let gebakjescheck = document.querySelectorAll('input[name="bestelGebakjes"]:checked');
+	gebakjes = [];
+	gebakjescheck.forEach((checkbox) => {
+		gebakjes.push(checkbox.value);
+	});
+	return gebakjes;
+}
+
+function geselecteerdeKoffies(name){
+	let koffiecheck = document.querySelectorAll('input[name="bestelKoffie"]:checked');
+	koffies = [];
+	koffiecheck.forEach((checkbox) => {
+		koffies.push(checkbox.value);
+	});
+	return koffies;
+}
+
+function geselecteerdeBroden(name){
+	let brodencheck = document.querySelectorAll('input[name="bestelBrood"]:checked');
+	broden = [];
+	brodencheck.forEach((checkbox) => {
+		broden.push(checkbox.value);
+	});
+	return broden;
+}
+
+
 function controle() {
     naamBestelTxt = document.getElementById("naam").value;
     emailBestelTxt = document.getElementById("email").value;
@@ -102,10 +136,13 @@ function controle() {
     woonplaatsBestelTxt = document.getElementById("woonplaats").value;
     bezorgJa = document.getElementById("bezorgja").checked;
     bezorgNee = document.getElementById("bezorgnee").checked;
-    broodjesArray = document.getElementByClass("broodjeschecked");
-    telBroodjes = 0;
+    bezorgen = "Ja = " + bezorgJa + "\t" + "Nee = " + bezorgNee;
+    broodjeslijst = geselecteerdeBroodjes(name);
+    gebakjeslijst = geselecteerdeGebakjes(name);
+    koffielijst = geselecteerdeKoffies(name);
+    brodenlijst = geselecteerdeBroden(name);
 
-
+    fout = true;
 
     if (naamBestelTxt.length == 0) {
         document.getElementById("naam_error").innerHTML = "Verplicht!";
@@ -128,125 +165,83 @@ function controle() {
         controleerTel();
     }
 
-    let lengteBroodjes = broodjesArray.length
-    for (let i = 0; i < lengteBroodjes; i++) {
-        if (broodjesArray[i].checked) {
-            telBroodjes++;
-        }
-    }
-    if (broodjesArray.checked) {
-        broodje1 = "naam " + broodjesArray[0].checked;
-        broodje2 = "naam " + broodjesArray[1].checked;
-        broodje3 = "naam " + broodjesArray[2].checked;
-        broodje4 = "naam " + broodjesArray[3].checked;
-        broodje5 = "naam " + broodjesArray[4].checked;
-        broodje6 = "naam " + broodjesArray[5].checked;
-        broodje7 = "naam " + broodjesArray[6].checked;
-        broodje8 = "naam " + broodjesArray[7].checked;
-        broodje9 = "naam " + broodjesArray[8].checked;
-        if (broodje1.checked) {
-        	aantalBroodjes = document.getElementById("broodje1").value;
-        }
-        if (broodje2.checked) {
-        	aantalBroodjes = document.getElementById("broodje2").value;
-        }
-        if (broodje3.checked) {
-        	aantalBroodjes = document.getElementById("broodje3").value;
-        }
-        if (broodje4.checked) {
-        	aantalBroodjes = document.getElementById("broodje4").value;
-        }
-        if (broodje5.checked) {
-        	aantalBroodjes = document.getElementById("broodje5").value;
-        }
-        if (broodje6.checked) {
-        	aantalBroodjes = document.getElementById("broodje6").value;
-        }
-        if (broodje7.checked) {
-        	aantalBroodjes = document.getElementById("broodje7").value;
-        }
-        if (broodje8.checked) {
-        	aantalBroodjes = document.getElementById("broodje8").value;
-        }
-        if (broodje9.checked) {
-        	aantalBroodjes = document.getElementById("broodje9").value;
-        }
-    }
-
     if (bezorgJa == false && bezorgNee == false) {
-    	document.getElementById("bezorgen_error").innerHTML = "Verplicht!";
-    	fout = false;
+        document.getElementById("bezorgen_error").innerHTML = "Verplicht!";
+        fout = false;
     }
 
     if (bezorgJa == true) {
+        bezorgJa = "Ja";
         if (straatBestelTxt.length == 0) {
-        	document.getElementById("straat_error").innerHTML = "Verplicht!";
-        	fout = false;
+            document.getElementById("straat_error").innerHTML = "Verplicht!";
+            fout = false;
         } else {
-        	controleerStraat();
+            controleerStraat();
         }
         if (postcodeBestelTxt.length == 0) {
-        	document.getElementById("postcode_error").innerHTML = "Verplicht!";
-        	fout = false;
+            document.getElementById("postcode_error").innerHTML = "Verplicht!";
+            fout = false;
         } else {
-        	controleerPostcode();
+            controleerPostcode();
         }
         if (woonplaatsBestelTxt.length == 0) {
-        	document.getElementById("woonplaats_error").innerHTML = "Verplicht!";
-        	fout = false;
+            document.getElementById("woonplaats_error").innerHTML = "Verplicht!";
+            fout = false;
         } else {
-        	controleerWoonplaats();
+            controleerWoonplaats();
         }
-    } 
+    } else {
+        bezorgNee = "Nee";
+    }
 
+    
 
     if (fout) {
-    	let link = "mailto:" + encodeURIComponent("bestel@javathehutt.be;")
-			+ encodeURIComponent(document.getElementById('email').value)
-			+ "?cc=" + encodeURIComponent("info@javathehutt.be;")
-			+ "&subject=" + encodeURIComponent("Bestelling")
-			+ "&body="
-			+ "Naam: "
-			+ encodeURIComponent(naamBestelTxt)
-			+ encodeURIComponent("\r\n")
-			+ "Email: "
-			+ encodeURIComponent(emailBestelTxt)
-			+ encodeURIComponent("\r\n")
-			+ "Telefoonnummer: "
-			+ encodeURIComponent(telBestelTxt)
-			+ encodeURIComponent("\r\n\n")
-			+ "Ik wil graag het volgende bestellen: "
-			+ encodeURIComponent("\r\n\n")
-			+ "Broodje(s): "
-			+ encodeURIComponent(broodje1) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje2) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje3) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje4) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje5) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje6) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje7) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje8) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n")
-			+ encodeURIComponent(broodje9) + " aantal: " + encodeURIComponent(aantalBroodjes) + " 	"
-			+ encodeURIComponent("\r\n\n")
-			+ "Bezorgen? "
-			+ encodeURIComponent(bezorgJa) + encodeURIComponent(bezorgNee)
-			+ encodeURIComponent("\r\n\n")
-			+ "Indien ja, dit is mijn bezorgadres: "
-			+ encodeURIComponent("\r\n")
-			+ "Straat en huisnr.: "
-			+ encodeURIComponent(straatBestelTxt)
-			+ encodeURIComponent("\r\n")
-			+ "Postcode en woonplaats: "
-			+ encodeURIComponent(postcodeBestelTxt) + encodeURIComponent(woonplaatsBestelTxt);
-		window.location.href = link;
+        let link = "mailto:" + encodeURIComponent("bestel@javathehutt.be;") +
+            encodeURIComponent(document.getElementById('email').value) +
+            "?cc=" + encodeURIComponent("info@javathehutt.be;") +
+            "&subject=" + encodeURIComponent("Bestelling") +
+            "&body=" +
+            "Naam: " +
+            encodeURIComponent(naamBestelTxt) +
+            encodeURIComponent("\r\n") +
+            "Email: " +
+            encodeURIComponent(emailBestelTxt) +
+            encodeURIComponent("\r\n") +
+            "Telefoonnummer: " +
+            encodeURIComponent(telBestelTxt) +
+            encodeURIComponent("\r\n\n") +
+            "Ik wil graag het volgende bestellen: " +
+            encodeURIComponent("\r\n") +
+            "Mocht u van een bepaald product meer aantallen willen, gelieve dit achter het product te noteren." +
+            encodeURIComponent("\r\n\n") +
+            "Broodje(s): " +
+            encodeURIComponent("\r\n") +
+            encodeURIComponent(broodjeslijst) +
+            encodeURIComponent("\r\n\n") +
+            "Gebakje(s): " +
+            encodeURIComponent("\r\n") +
+            encodeURIComponent(gebakjeslijst) +
+            encodeURIComponent("\r\n\n") +
+            "Koffie(s): " +
+            encodeURIComponent("\r\n") +
+            encodeURIComponent(koffielijst) +
+            encodeURIComponent("\r\n\n") +
+            "Brood(en): " +
+            encodeURIComponent("\r\n") +
+            encodeURIComponent(brodenlijst) +
+            encodeURIComponent("\r\n\n") +
+            "Bezorgen? " +
+            encodeURIComponent(bezorgen) +
+            encodeURIComponent("\r\n\n") +
+            "Indien ja, dit is mijn bezorgadres: " +
+            encodeURIComponent("\r\n") +
+            "Straat en huisnr.: " +
+            encodeURIComponent(straatBestelTxt) +
+            encodeURIComponent("\r\n") +
+            "Postcode en woonplaats: " +
+            encodeURIComponent(postcodeBestelTxt) + " " + encodeURIComponent(woonplaatsBestelTxt);
+        window.location.href = link;
     }
 
 }
