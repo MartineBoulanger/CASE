@@ -198,8 +198,7 @@ button a,
 button a:hover,
 #bestel-btn:hover,
 #reserveer-btn:hover,
-#zend-btn:hover,
-#nieuws-btn:hover {
+#zend-btn:hover {
     background-color: #42a629;
     color: #fff8e5;
     border: 1px solid #fff8e5;
@@ -256,16 +255,8 @@ button a:hover,
 }
 
 #nieuws-btn {
+    margin-left: -40px;
     outline: 1px solid transparent;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #fff8e5;
-    border: 1px solid #bf9a69;
-    border-radius: 15px;
-    color: #bf9a68;
-    padding: 0.8em;
-    margin-right: 5rem;
-    margin-left: 0;
 }
 
 /* homepagina einde */
