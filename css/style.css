@@ -84,7 +84,6 @@ a:hover {
   color: #42a629;
   text-decoration: underline;
 }
-
 /* navigatie einde */
 
 /* homepagina begin */
@@ -228,7 +227,6 @@ button a:hover,
 }
 
 .nieuwsbrief {
-  margin-bottom: 5rem;
   grid-column: 4 / -1;
 }
 
@@ -258,7 +256,6 @@ button a:hover,
   margin-left: -40px;
   outline: 1px solid transparent;
 }
-
 /* homepagina einde */
 
 /* koffie en bakkerij pagina begin */
@@ -293,11 +290,14 @@ button a:hover,
   padding: 5px;
 }
 
+.prijslijst td:nth-child(even){
+  text-align: right;
+}
+
 .prijslijst tr:hover {
   background-color: #bf9a68;
   color: white;
 }
-
 /* koffie en bakkerij pagina einde */
 
 /* contact pagina begin */
@@ -367,7 +367,6 @@ textarea {
   cursor: pointer;
   margin-right: 0;
 }
-
 /* contact pagina einde */
 
 /* reservering en bestelling pagina begin */
@@ -466,11 +465,10 @@ select,
   margin-right: 1rem;
   padding-bottom: 1em;
 }
-
 /* reservering en bestelling pagina einde */
 
 /* footer */
-footer {
+.footer {
   background-color: #180e0d;
   color: #bf9a68;
   text-align: center;

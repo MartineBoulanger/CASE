@@ -90,7 +90,7 @@ function controleerWoonplaats() {
     }
 }
 
-function geselecteerdeBroodjes(name) {
+function geselecteerdeBroodjes(naam) {
 	let broodjescheck = document.querySelectorAll('input[name="bestelBroodjes"]:checked');
 	broodjes = [];
     broodjescheck.forEach((checkbox) => {
@@ -99,7 +99,7 @@ function geselecteerdeBroodjes(name) {
     return broodjes;
 }
 
-function geselecteerdeGebakjes(name) {
+function geselecteerdeGebakjes(naam) {
 	let gebakjescheck = document.querySelectorAll('input[name="bestelGebakjes"]:checked');
 	gebakjes = [];
 	gebakjescheck.forEach((checkbox) => {
@@ -108,7 +108,7 @@ function geselecteerdeGebakjes(name) {
 	return gebakjes;
 }
 
-function geselecteerdeKoffies(name){
+function geselecteerdeKoffies(naam){
 	let koffiecheck = document.querySelectorAll('input[name="bestelKoffie"]:checked');
 	koffies = [];
 	koffiecheck.forEach((checkbox) => {
@@ -117,7 +117,7 @@ function geselecteerdeKoffies(name){
 	return koffies;
 }
 
-function geselecteerdeBroden(name){
+function geselecteerdeBroden(naam){
 	let brodencheck = document.querySelectorAll('input[name="bestelBrood"]:checked');
 	broden = [];
 	brodencheck.forEach((checkbox) => {
@@ -136,10 +136,10 @@ function controle() {
     bezorgJa = document.getElementById("bezorgja").checked;
     bezorgNee = document.getElementById("bezorgnee").checked;
     bezorgen = "Ja = " + bezorgJa + "\t" + "Nee = " + bezorgNee;
-    broodjeslijst = geselecteerdeBroodjes(name);
-    gebakjeslijst = geselecteerdeGebakjes(name);
-    koffielijst = geselecteerdeKoffies(name);
-    brodenlijst = geselecteerdeBroden(name);
+    broodjeslijst = geselecteerdeBroodjes(naam);
+    gebakjeslijst = geselecteerdeGebakjes(naam);
+    koffielijst = geselecteerdeKoffies(naam);
+    brodenlijst = geselecteerdeBroden(naam);
 
     fout = true;
 

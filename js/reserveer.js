@@ -122,7 +122,7 @@ function controle(){
 			+ "Ik wil graag een reservatie doen op naam van "
 			+ encodeURIComponent(naamReserveerTxt) + "."
 			+ encodeURIComponent("\r\n")
-			+ "Mijn telefoonnummer waarop u mij kunt contacteren in het geval dat er iets zou zijn is "
+			+ "Mijn telefoonnummer waarop u mij kunt contacteren in geval van nood is "
 			+ encodeURIComponent(telReserveerTxt) + "."
 			+ encodeURIComponent("\r\n")
 			+ "Mocht ik telefonisch niet te bereiken zijn, dan kunt u een email sturen naar "
