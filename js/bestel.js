@@ -126,7 +126,6 @@ function geselecteerdeBroden(name){
 	return broden;
 }
 
-
 function controle() {
     naamBestelTxt = document.getElementById("naam").value;
     emailBestelTxt = document.getElementById("email").value;
@@ -194,8 +193,6 @@ function controle() {
         bezorgNee = "Nee";
     }
 
-    
-
     if (fout) {
         let link = "mailto:" + encodeURIComponent("bestel@javathehutt.be;") +
             encodeURIComponent(document.getElementById('email').value) +
@@ -243,5 +240,4 @@ function controle() {
             encodeURIComponent(postcodeBestelTxt) + " " + encodeURIComponent(woonplaatsBestelTxt);
         window.location.href = link;
     }
-
 }

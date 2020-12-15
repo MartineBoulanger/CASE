@@ -2,198 +2,197 @@
 @import url("https://use.typekit.net/mga5dkf.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-  margin: 0;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1,
 h2 {
-  color: #bf9a68;
+    color: #bf9a68;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-  font-size: 1.7em;
+    font-size: 1.7em;
 }
 
 form {
-  margin: auto;
-  margin-bottom: 7rem;
+    margin: auto;
+    margin-bottom: 7rem;
 }
 
 .error {
-  color: #b10000;
-  font-style: italic;
-  padding-left: 2em;
+    color: #b10000;
+    font-style: italic;
+    padding-left: 2em;
 }
 
 label {
-  display: inline-block;
-  text-align: right;
-  width: 250px;
+    display: inline-block;
+    text-align: right;
+    width: 250px;
 }
 
-/* header begin */
-header {
-  background-color: #8a573a;
-  padding: 10px;
-  text-align: center;
-  background-image: url("../img/logo+background.png");
-  background-size: cover;
-  background-position: center;
-  height: 220px;
-}
-
-.logo h1 {
-  color: #fff8e5;
-  font-family: bickham-script-pro-3, sans-serif;
-  font-size: 5em;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.logo h2 {
-  font-size: 1em;
-}
-/* header einde */
+header img {
+    width: 100%;
+    margin-bottom: 0;
+  }
 
 /* navigatie begin */
 .navigatie {
-  background-color: #8a573a;
-  color: #fff8e5;
-  text-align: center;
-  padding: 0.1rem;
-  padding-right: 0.7rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+    background-color: #8a573a;
+    color: #fff8e5;
+    text-align: center;
+    padding: 0.1rem;
+    padding-right: 0.7rem;
+    margin-top: -.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .navigatie li {
-  display: inline-block;
-  padding: 5px;
+    display: inline-block;
+    padding: 5px;
 }
 
 a {
-  color: #fff8e5;
-  text-decoration: none;
-  margin: 2rem;
-  font-weight: 700;
+    color: #fff8e5;
+    text-decoration: none;
+    margin: 2rem;
+    font-weight: 700;
 }
 
 a:hover {
-  color: #42a629;
-  text-decoration: underline;
+    color: #42a629;
+    text-decoration: underline;
 }
+
 /* navigatie einde */
 
 /* homepagina begin */
 .maincontent {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(10em, auto));
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10em, auto));
+    margin: auto;
 }
 
 .home,
 .reservering,
 .bestellen {
-  background-image: url("../img/koffie_tas.png");
-  background-repeat: no-repeat;
-  background-position: right;
+    background-image: url("../img/koffie_tas.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .intro {
-  width: 100%;
-  margin: auto;
-  grid-column: 2 / -1;
-  margin-top: 6rem;
+    width: 100%;
+    margin: auto;
+    grid-column: 2 / -1;
+    margin-top: 6rem;
 }
 
 .intro p {
-  margin-left: 5em;
-  width: 60%;
-  line-height: 1.5;
+    margin-left: 5em;
+    width: 60%;
+    line-height: 1.5;
 }
 
 .slideshow {
-  width: 100%;
-  height: 250px;
-  box-sizing: border-box;
-  position: relative;
-  grid-column: 2 / span 3;
-  margin: 5rem 0 15rem 10rem;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+    grid-column: 2 / span 3;
+    margin: 5rem 0 15rem 10rem;
 }
 
 .slideshow img {
-  position: absolute;
-  animation: slideshow 60s infinite;
-  opacity: 0;
-  width: 500px;
-  height: auto;
-  border: 2px solid #42a629;
+    position: absolute;
+    animation: slideshow 60s infinite;
+    opacity: 0;
+    width: 500px;
+    height: auto;
+    border: 2px solid #42a629;
 }
 
 @keyframes slideshow {
-  25% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0;
-  }
+    25% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
 }
 
 .slideshow img:nth-child(6) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
+
 .slideshow img:nth-child(5) {
-  animation-delay: 10s;
+    animation-delay: 10s;
 }
+
 .slideshow img:nth-child(4) {
-  animation-delay: 20s;
+    animation-delay: 20s;
 }
+
 .slideshow img:nth-child(3) {
-  animation-delay: 30s;
+    animation-delay: 30s;
 }
+
 .slideshow img:nth-child(2) {
-  animation-delay: 40s;
+    animation-delay: 40s;
 }
+
 .slideshow img:nth-child(1) {
-  animation-delay: 50s;
+    animation-delay: 50s;
 }
 
 .buttons {
-  grid-column: 1 / -1;
-  margin: auto;
+    grid-column: 1 / -1;
+    margin: auto;
 }
 
 button {
-  box-sizing: border-box;
-  border: none;
-  margin: 0 3.5rem 10rem 3.5rem;
-  background: transparent;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 3.5rem 10rem 3.5rem;
+    background: transparent;
 }
 
 button a,
 #bestel-btn,
 #reserveer-btn,
 #zend-btn {
-  display: inline-block;
-  width: 10em;
-  height: 100%;
-  background-color: #fff8e5;
-  border: 1px solid #bf9a69;
-  border-radius: 15px;
-  color: #bf9a68;
-  padding: 0.7em;
-  font-size: 1rem;
-  text-transform: uppercase;
+    display: inline-block;
+    width: 10em;
+    height: 100%;
+    background-color: #fff8e5;
+    border: 1px solid #bf9a69;
+    border-radius: 15px;
+    color: #bf9a68;
+    padding: 0.7em;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 button a:hover,
@@ -201,86 +200,87 @@ button a:hover,
 #reserveer-btn:hover,
 #zend-btn:hover,
 #nieuws-btn:hover {
-  background-color: #42a629;
-  color: #fff8e5;
-  border: 1px solid #fff8e5;
-  text-decoration: none;
+    background-color: #42a629;
+    color: #fff8e5;
+    border: 1px solid #fff8e5;
+    text-decoration: none;
 }
 
 .reviews {
-  grid-column: 1 / -1;
-  margin: auto;
-  margin-bottom: 5rem;
+    grid-column: 1 / -1;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .review {
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 5rem;
-  padding: 20px;
-  border: 2px solid #42a629;
-  background-color: rgba(191, 154, 105, 0.2);
-  font-weight: bold;
-  line-height: 1.5;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 5rem;
+    padding: 20px;
+    border: 2px solid #42a629;
+    background-color: rgba(191, 154, 105, 0.2);
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .quote {
-  font-size: 35px;
-  color: #42a629;
+    font-size: 35px;
+    color: #42a629;
 }
 
 .nieuwsbrief {
-  margin-bottom: 5rem;
-  grid-column: 4 / -1;
+    margin-bottom: 5rem;
+    grid-column: 4 / -1;
 }
 
 .nieuwsbrief h2 {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .nieuwsbrief p {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 #e-mail {
-  width: 20em;
-  padding: 0.8em;
-  border: 1px solid #42a629;
-  border-radius: 5px;
-  outline: 1px solid transparent;
+    width: 20em;
+    padding: 0.8em;
+    border: 1px solid #42a629;
+    border-radius: 5px;
+    outline: 1px solid transparent;
 }
 
 #e-mail:focus,
 #e-mail:hover {
-  background: rgba(191, 154, 105, 0.2);
+    background: rgba(191, 154, 105, 0.2);
 }
 
 #nieuws-btn {
-  outline: 1px solid transparent;
-  cursor: pointer;
-  font-weight: bold;
-  background-color: #fff8e5;
-  border: 1px solid #bf9a69;
-  border-radius: 15px;
-  color: #bf9a68;
-  padding: 0.8em;
-  margin-right: 5rem;
-  margin-left: 0;
+    outline: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff8e5;
+    border: 1px solid #bf9a69;
+    border-radius: 15px;
+    color: #bf9a68;
+    padding: 0.8em;
+    margin-right: 5rem;
+    margin-left: 0;
 }
+
 /* homepagina einde */
 
 /* koffie en bakkerij pagina begin */
 .main-koffie {
-  background-image: url("../img/vector_koffie.png");
-  background-size: contain;
-  background-position: center;
+    background-image: url("../img/vector_koffie.png");
+    background-size: contain;
+    background-position: center;
 }
 
 .main-bakkerij {
-  background-image: url("../img/vector_brood.png");
-  background-size: contain;
-  background-position: center;
+    background-image: url("../img/vector_brood.png");
+    background-size: contain;
+    background-position: center;
 }
 
 .broodjes,
@@ -288,193 +288,197 @@ button a:hover,
 .brood,
 .koffie,
 .high-tea {
-  grid-column: 3 / 5;
-  margin-bottom: 5rem;
+    grid-column: 3 / 5;
+    margin-bottom: 5rem;
 }
 
 .brood,
 .high-tea {
-  margin-bottom: 8rem;
+    margin-bottom: 8rem;
 }
 
 .prijslijst td {
-  width: 10em;
-  padding: 5px;
+    width: 10em;
+    padding: 5px;
 }
 
 .prijslijst tr:hover {
-  background-color: #bf9a68;
-  color: white;
+    background-color: #bf9a68;
+    color: white;
 }
+
 /* koffie en bakkerij pagina einde */
 
 /* contact pagina begin */
 .main-contact {
-  background-image: url("../img/contact-icon-set.png");
-  background-size: contain;
-  background-position: center;
+    background-image: url("../img/contact-icon-set.png");
+    background-size: contain;
+    background-position: center;
 }
 
 .blok1 {
-  grid-column: 2 / span 2;
-  width: 50%;
-  line-height: 1.5;
+    grid-column: 2 / span 2;
+    width: 50%;
+    line-height: 1.5;
 }
+
 .blok2 {
-  grid-column: 4 / span 2;
-  line-height: 1.5;
+    grid-column: 4 / span 2;
+    line-height: 1.5;
 }
 
 .blok2 ul {
-  list-style-type: none;
-  padding-left: 0;
-  font-style: italic;
+    list-style-type: none;
+    padding-left: 0;
+    font-style: italic;
 }
 
 .maps {
-  border: 2px solid #42a629;
-  grid-column: 2 / 5;
-  margin-bottom: 5rem;
+    border: 2px solid #42a629;
+    grid-column: 2 / 5;
+    margin-bottom: 5rem;
 }
 
 iframe {
-  width: 100%;
-  height: 350px;
+    width: 100%;
+    height: 350px;
 }
 
 .contact-form {
-  grid-column: 2 / 5;
+    grid-column: 2 / 5;
 }
 
 .contact-form input {
-  width: 20em;
-  border: 1px solid #bf9a68;
-  padding: 5px;
-  border-radius: 5px;
-  float: right;
-  margin-left: 1rem;
+    width: 20em;
+    border: 1px solid #bf9a68;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    margin-left: 1rem;
 }
 
 textarea {
-  border: 1px solid #bf9a69;
-  border-radius: 5px;
-  width: 100%;
+    border: 1px solid #bf9a69;
+    border-radius: 5px;
+    width: 100%;
 }
 
 #zend-btn,
 #bestel-btn,
 #reserveer-btn {
-  outline: 1px solid transparent;
-  margin-top: 2rem;
-  float: right;
-  cursor: pointer;
-  margin-right: 0;
+    outline: 1px solid transparent;
+    margin-top: 2rem;
+    float: right;
+    cursor: pointer;
+    margin-right: 0;
 }
+
 /* contact pagina einde */
 
 /* reservering en bestelling pagina begin */
 .reservering .intro p,
 .bestellen .intro p {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .reservering form {
-  grid-column: 1 / -1;
-  margin-top: 5rem;
+    grid-column: 1 / -1;
+    margin-top: 5rem;
 }
 
 .bestellen {
-  background-image: none;
+    background-image: none;
 }
 
 .bestellen form {
-  grid-column: 1 / -1;
-  margin-top: 5rem;
-  margin: auto;
+    grid-column: 1 / -1;
+    margin-top: 5rem;
+    margin: auto;
 }
 
 .reservering input,
 select,
 .bestelcontactpersoon input,
 .leveradres input {
-  margin-left: 4rem;
-  width: 15em;
-  border: 1px solid #bf9a68;
-  padding: 5px;
-  border-radius: 5px;
+    margin-left: 4rem;
+    width: 15em;
+    border: 1px solid #bf9a68;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .leveradres {
-  float: right;
-  margin-bottom: 6rem;
+    float: right;
+    margin-bottom: 6rem;
 }
 
 .leveradres p:first-child {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .bezorgkeuze input {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 .bezorgkeuze label {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .bestelbroodjes,
 .bestelgebak,
 .bestelkoffie,
 .bestelbrood {
-  float: left;
-  width: 300px;
-  margin: 50px;
-  margin: 2rem 0;
-  margin-right: 25px;
-  border: 2px solid #42a629;
-  border-radius: 15px;
-  box-sizing: border-box;
-  background-color: rgba(191, 154, 105, 0.2);
+    float: left;
+    width: 300px;
+    margin: 50px;
+    margin: 2rem 0;
+    margin-right: 25px;
+    border: 2px solid #42a629;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: rgba(191, 154, 105, 0.2);
 }
 
 .bestelbrood {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .bestelbroodjes input,
 .bestelgebak input,
 .bestelkoffie input,
 .bestelbrood input {
-  max-width: 30px;
-  outline: 1px solid transparent;
-  border: 1px solid #bf9a68;
-  border-radius: 5px;
-  margin: 0 3rem;
+    max-width: 30px;
+    outline: 1px solid transparent;
+    border: 1px solid #bf9a68;
+    border-radius: 5px;
+    margin: 0 3rem;
 }
 
 .bestelbroodjes label,
 .bestelgebak label,
 .bestelkoffie label,
 .bestelbrood label {
-  margin: 0;
-  margin-left: 0;
+    margin: 0;
+    margin-left: 0;
 }
 
 .bestelbroodjes h2,
 .bestelgebak h2,
 .bestelkoffie h2,
 .bestelbrood h2 {
-  font-size: 1.5em;
-  padding-left: 50px;
-  margin-right: 1rem;
-  padding-bottom: 1em;
+    font-size: 1.5em;
+    padding-left: 50px;
+    margin-right: 1rem;
+    padding-bottom: 1em;
 }
+
 /* reservering en bestelling pagina einde */
 
 /* footer */
 footer {
-  background-color: #180e0d;
-  color: #bf9a68;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.7rem;
+    background-color: #180e0d;
+    color: #bf9a68;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.7rem;
 }
