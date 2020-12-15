@@ -43,9 +43,10 @@ header {
   background-color: #8a573a;
   padding: 10px;
   text-align: center;
-  background-image: url("../img/header_achtergrond.png");
+  background-image: url("../img/logo+background.png");
   background-size: cover;
   background-position: center;
+  height: 220px;
 }
 
 .logo h1 {
