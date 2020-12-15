@@ -1,11 +1,11 @@
 @import "normalize.css";
 @import url("https://use.typekit.net/mga5dkf.css");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
 body {
   margin: 0;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -27,7 +27,7 @@ form {
 }
 
 .error {
-  color: #B10000;
+  color: #b10000;
   font-style: italic;
   padding-left: 2em;
 }
@@ -43,7 +43,7 @@ header {
   background-color: #8a573a;
   padding: 10px;
   text-align: center;
-  background-image: url('../img/header_achtergrond.png');
+  background-image: url("../img/header_achtergrond.png");
   background-size: cover;
   background-position: center;
 }
@@ -56,7 +56,7 @@ header {
   margin-top: 0;
 }
 
-.logo h2{
+.logo h2 {
   font-size: 1em;
 }
 /* header einde */
@@ -67,7 +67,7 @@ header {
   color: #fff8e5;
   text-align: center;
   padding: 0.1rem;
-  padding-right: .7rem;
+  padding-right: 0.7rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -218,9 +218,14 @@ button a:hover,
   margin-bottom: 5rem;
   padding: 20px;
   border: 2px solid #42a629;
-  background-color: rgba(191, 154, 105, .2);
+  background-color: rgba(191, 154, 105, 0.2);
   font-weight: bold;
   line-height: 1.5;
+}
+
+.quote {
+  font-size: 35px;
+  color: #42a629;
 }
 
 .nieuwsbrief {
@@ -234,7 +239,7 @@ button a:hover,
 
 .nieuwsbrief p {
   margin-bottom: 0.5rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 #e-mail {
@@ -247,7 +252,7 @@ button a:hover,
 
 #e-mail:focus,
 #e-mail:hover {
-  background: rgba(191, 154, 105, .2);
+  background: rgba(191, 154, 105, 0.2);
 }
 
 #nieuws-btn {
@@ -319,7 +324,7 @@ button a:hover,
   line-height: 1.5;
 }
 
-.blok2 ul{
+.blok2 ul {
   list-style-type: none;
   padding-left: 0;
   font-style: italic;
@@ -367,26 +372,30 @@ textarea {
 /* contact pagina einde */
 
 /* reservering en bestelling pagina begin */
-.reservering .intro p, .bestellen .intro p{
+.reservering .intro p,
+.bestellen .intro p {
   margin-bottom: 5rem;
 }
 
-.reservering form{
+.reservering form {
   grid-column: 1 / -1;
   margin-top: 5rem;
 }
 
-.bestellen{
+.bestellen {
   background-image: none;
 }
 
-.bestellen form{
+.bestellen form {
   grid-column: 1 / -1;
   margin-top: 5rem;
   margin: auto;
 }
 
-.reservering input, select, .bestelcontactpersoon input, .leveradres input{
+.reservering input,
+select,
+.bestelcontactpersoon input,
+.leveradres input {
   margin-left: 4rem;
   width: 15em;
   border: 1px solid #bf9a68;
@@ -394,24 +403,27 @@ textarea {
   border-radius: 5px;
 }
 
-.leveradres{
+.leveradres {
   float: right;
   margin-bottom: 6rem;
 }
 
-.leveradres p:first-child{
+.leveradres p:first-child {
   margin-bottom: 3rem;
 }
 
-.bezorgkeuze input{
+.bezorgkeuze input {
   margin-left: 15px;
 }
 
-.bezorgkeuze label{
+.bezorgkeuze label {
   font-weight: 700;
 }
 
-.bestelbroodjes, .bestelgebak, .bestelkoffie, .bestelbrood{
+.bestelbroodjes,
+.bestelgebak,
+.bestelkoffie,
+.bestelbrood {
   float: left;
   width: 300px;
   margin: 50px;
@@ -420,14 +432,17 @@ textarea {
   border: 2px solid #42a629;
   border-radius: 15px;
   box-sizing: border-box;
-  background-color: rgba(191, 154, 105, .2);
+  background-color: rgba(191, 154, 105, 0.2);
 }
 
-.bestelbrood{
+.bestelbrood {
   margin-right: 0;
 }
 
-.bestelbroodjes input, .bestelgebak input, .bestelkoffie input, .bestelbrood input{
+.bestelbroodjes input,
+.bestelgebak input,
+.bestelkoffie input,
+.bestelbrood input {
   max-width: 30px;
   outline: 1px solid transparent;
   border: 1px solid #bf9a68;
@@ -435,12 +450,18 @@ textarea {
   margin-left: 1rem;
 }
 
-.bestelbroodjes label, .bestelgebak label, .bestelkoffie label, .bestelbrood label{
+.bestelbroodjes label,
+.bestelgebak label,
+.bestelkoffie label,
+.bestelbrood label {
   margin: 0;
   margin-left: 0;
 }
 
-.bestelbroodjes h2, .bestelgebak h2, .bestelkoffie h2, .bestelbrood h2{
+.bestelbroodjes h2,
+.bestelgebak h2,
+.bestelkoffie h2,
+.bestelbrood h2 {
   font-size: 1.5em;
   padding-left: 50px;
   margin-right: 1rem;
@@ -454,5 +475,5 @@ footer {
   color: #bf9a68;
   text-align: center;
   padding: 15px;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
