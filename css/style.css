@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import url("https://use.typekit.net/mga5dkf.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 html {
   box-sizing: border-box;
@@ -21,6 +22,7 @@ body {
 h1,
 h2 {
   color: #bf9a68;
+  font-family: "Russo One", sans-serif;
 }
 
 h1 {
@@ -171,7 +173,7 @@ a:hover {
   margin: auto;
 }
 
-.buttons a{
+.buttons a {
   box-sizing: border-box;
   border: none;
   margin: 0 3.5rem 10rem 3.5rem;
@@ -240,7 +242,7 @@ a:hover {
   font-size: 0.9rem;
 }
 
-.nieuwsbrief a{
+.nieuwsbrief a {
   margin-left: -3px;
 }
 
@@ -291,7 +293,7 @@ a:hover {
   padding: 5px;
 }
 
-.prijslijst td:nth-child(even){
+.prijslijst td:nth-child(even) {
   text-align: right;
 }
 
