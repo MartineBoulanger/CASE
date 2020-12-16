@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="meta tags, author, keywords, description" />
+    <meta name="description" content="Bestel de lekkerste koffies en sandwiches van de Galaxy bij Java the Hutt." />
     <meta name="author" content="Martine Boulanger, Steven Kelber" />
-    <meta description="reserveringen maken" />
+
     <title>Bestellen</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
-    <script type="text/javascript" src="../js/bestel.js"></script>
+    <script src="../js/bestel.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -18,6 +21,7 @@
            <img src="../img/logo+background.png" alt="Logo Jave the Hutt" />
         </div>
     </header>
+
     <div class="navigatie">
         <nav>
             <ul>
@@ -28,8 +32,9 @@
             </ul>
         </nav>
     </div>
+
     <div class="maincontent bestellen">
-        <div class="intro">
+        <header class="intro">
             <h1>Bestelling</h1>
             <p>
                 Met de crisis die aan de gang is in de galaxy, gaat onze lunchroom alleen open voor degene die hebben gereserveerd voor een high-tea. Ook doen wij alleen bezorgen op lokaal niveau, want met deze crisis willen we onze Wookies beschermen tegen al het geweld. Komt u van verder, dan hebben wij liever dat u uw bestelling komt ophalen.
@@ -38,9 +43,9 @@
                 <br><br>
                 Meer vragen omtrent onze producten, of de beperkte bezorging, neem dan contact met ons op.
             </p>
-        </div>
+        </header>
         <form id="form-bestellen" class="bestel-form">
-            <div class="bestelcontactpersoon">
+            <section class="bestelcontactpersoon">
                 <p>
                     <label for="naam">Naam</label>
                     <input type="text" name="naam" id="naam" placeholder="uw volledige naam">
@@ -56,136 +61,136 @@
                     <input type="tel" name="tel" id="tel">
                     <span class="error" id="tel_error"></span>
                 </p>
-            </div>
-            <div class="bestelbroodjes">
+            </section>
+            <section class="bestelbroodjes">
                 <h2>Broodjes</h2>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje1"> broodje1
+                    <input type="checkbox" name="bestelBroodjes" value="broodje1"> broodje1
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje2"> broodje2
+                    <input type="checkbox" name="bestelBroodjes" value="broodje2"> broodje2
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje3"> broodje3
+                    <input type="checkbox" name="bestelBroodjes" value="broodje3"> broodje3
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje4"> broodje4
+                    <input type="checkbox" name="bestelBroodjes" value="broodje4"> broodje4
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje5"> broodje5
+                    <input type="checkbox" name="bestelBroodjes" value="broodje5"> broodje5
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje6"> broodje6
+                    <input type="checkbox" name="bestelBroodjes" value="broodje6"> broodje6
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje7"> broodje7
+                    <input type="checkbox" name="bestelBroodjes" value="broodje7"> broodje7
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje8"> broodje8
+                    <input type="checkbox" name="bestelBroodjes" value="broodje8"> broodje8
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelBroodjes" id="naamBroodje" value="broodje9"> broodje9
+                    <input type="checkbox" name="bestelBroodjes" value="broodje9"> broodje9
                 </p>
-            </div>
-            <div class="bestelgebak">
+            </section>
+            <section class="bestelgebak">
                 <h2>Gebak</h2>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak1"> Gebak1
+                    <input type="checkbox" name="bestelGebakjes" value="gebak1"> Gebak1
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak2"> Gebak2
+                    <input type="checkbox" name="bestelGebakjes" value="gebak2"> Gebak2
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak3"> Gebak3
+                    <input type="checkbox" name="bestelGebakjes" value="gebak3"> Gebak3
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak4"> Gebak4
+                    <input type="checkbox" name="bestelGebakjes" value="gebak4"> Gebak4
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak5"> Gebak5
+                    <input type="checkbox" name="bestelGebakjes" value="gebak5"> Gebak5
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak6"> Gebak6
+                    <input type="checkbox" name="bestelGebakjes" value="gebak6"> Gebak6
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak7"> Gebak7
+                    <input type="checkbox" name="bestelGebakjes" value="gebak7"> Gebak7
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak8"> Gebak8
+                    <input type="checkbox" name="bestelGebakjes" value="gebak8"> Gebak8
                 </p>
                 <p>
-                    <input type="checkbox" name="bestelGebakjes" id="naamGebakje" value="gebak9"> Gebak9
+                    <input type="checkbox" name="bestelGebakjes" value="gebak9"> Gebak9
                 </p>
-            </div>
-            <div class="bestelkoffie">
+            </section>
+            <section class="bestelkoffie">
                 <h2>Koffie</h2>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie1"> koffie1
+                        <input type="checkbox" name="bestelKoffie" value="koffie1"> koffie1
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie2"> koffie2
+                        <input type="checkbox" name="bestelKoffie" value="koffie2"> koffie2
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie3"> koffie3
+                        <input type="checkbox" name="bestelKoffie" value="koffie3"> koffie3
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie4"> koffie4
+                        <input type="checkbox" name="bestelKoffie" value="koffie4"> koffie4
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie5"> koffie5
+                        <input type="checkbox" name="bestelKoffie" value="koffie5"> koffie5
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie6"> koffie6
+                        <input type="checkbox" name="bestelKoffie" value="koffie6"> koffie6
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie7"> koffie7
+                        <input type="checkbox" name="bestelKoffie" value="koffie7"> koffie7
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie8"> koffie8
+                        <input type="checkbox" name="bestelKoffie" value="koffie8"> koffie8
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelKoffie" id="naamKoffie" value="koffie9"> koffie9
+                        <input type="checkbox" name="bestelKoffie" value="koffie9"> koffie9
                 </p>
-            </div>
-            <div class="bestelbrood">
+            </section>
+            <section class="bestelbrood">
                 <h2>Brood</h2>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood1"> Brood1
+                        <input type="checkbox" name="bestelBrood" value="brood1"> Brood1
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood2"> Brood2
+                        <input type="checkbox" name="bestelBrood" value="brood2"> Brood2
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood3"> Brood3
+                        <input type="checkbox" name="bestelBrood" value="brood3"> Brood3
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood4"> Brood4
+                        <input type="checkbox" name="bestelBrood" value="brood4"> Brood4
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood5"> Brood5
+                        <input type="checkbox" name="bestelBrood" value="brood5"> Brood5
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood6"> Brood6
+                        <input type="checkbox" name="bestelBrood" value="brood6"> Brood6
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood7"> Brood7
+                        <input type="checkbox" name="bestelBrood" value="brood7"> Brood7
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood8"> Brood8
+                        <input type="checkbox" name="bestelBrood" value="brood8"> Brood8
                 </p>
                 <p>
-                        <input type="checkbox" name="bestelBrood" id="naamBrood" value="brood9"> Brood9
+                        <input type="checkbox" name="bestelBrood" value="brood9"> Brood9
                 </p>
-            </div>
-            <div class="bezorgkeuze">
+            </section>
+            <section class="bezorgkeuze">
                 <p>
-                    <label for="bezorgen">Bezorgen?</label>
+                    <label>Bezorgen?</label>
                     <input type="radio" name="bezorgen" id="bezorgja" onclick="bezorgRadioKeuzeJa()"> Ja
                     <input type="radio" name="bezorgen" id="bezorgnee" onclick="bezorgRadioKeuzeNee()"> Nee (afhalen)
                     <span class="error" id="bezorgen_error"></span>
                 </p>
-            </div>
-            <div class="leveradres">
+            </section>
+            <section class="leveradres">
                 <p>Indien ja, vul dan het bezorgadres in</p>
                 <p>
                     <label for="straat">Straat</label>
@@ -205,9 +210,10 @@
                 <p>
                     <input type="button" value="Bestel" id="bestel-btn" onclick="controle()">
                 </p>
-            </div>
+            </section>
         </form>
     </div>
+
     <footer class="footer">
         <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
     </footer>

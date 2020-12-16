@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="meta tags, author, keywords, description" />
+    <meta name="description" content="Contactgegevens en openingsuren van Jave the Hutt." />
     <meta name="author" content="Martine Boulanger, Steven Kelber" />
-    <meta description="contactgegevens" />
+
     <title>Contact</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
-    <script type="text/javascript" src="../js/contact.js"></script>
+    <script src="../js/contact.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -19,6 +21,7 @@
            <img src="../img/logo+background.png" alt="Logo Jave the Hutt" />
         </div>
     </header>
+
     <div class="navigatie">
         <nav>
             <ul>
@@ -29,18 +32,19 @@
             </ul>
         </nav>
     </div>
+
     <div class="maincontent main-contact">
-        <div class="intro">
-            <h1>Contact</h1>
-        </div>
-        <div class="blok1">
+        <h1 class="intro">Contact</h1>
+
+        <section class="blok1">
             <h2>Adresgegevens</h2>
             <address>
                 <p>korriban's palace 66<br>9000 Deathstar<br>Outer rim</p>
                 <p>01/234 567<br>contact@javathehutt.com</p>
             </address>
-        </div>
-        <div class="blok2">
+        </section>
+
+        <section class="blok2">
             <h2>Openingsuren</h2>
             <ul>
                 <li>Maandag 08:00 - 18:00</li>
@@ -51,16 +55,16 @@
                 <li>Zaterdag 08:00 - 16:00</li>
                 <li>Zondag 08:00 - 12:00</li>
             </ul>
-        </div>
-        <div class="intro">
-            <h2>Onze locatie</h2>
-        </div>
-        <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.36529380216!2d-122.64583624865149!3d38.06187307960856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085bebe40d828b5%3A0x98d8f273487cec74!2sSkywalker%20Ranch!5e0!3m2!1sen!2sbe!4v1608038477710!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        <div class="intro">
-            <h2>Contactformulier</h2>
-        </div>
+        </section>
+
+        <h2 class="intro">Onze locatie</h2>
+
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.36529380216!2d-122.64583624865149!3d38.06187307960856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085bebe40d828b5%3A0x98d8f273487cec74!2sSkywalker%20Ranch!5e0!3m2!1sen!2sbe!4v1608038477710!5m2!1sen!2sbe" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+        <h2 class="intro">Contactformulier</h2>
+
         <form class="contact-form" id="formulier">
             <p>
                 <label for="voornaam">Voornaam:</label>
@@ -82,6 +86,7 @@
                 <input type="text" name="onderwerp" id="onderwerp">
                 <span class="error" id="onderwerp_error"></span>
             </p>
+            <p>
             <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Hier uw bericht"></textarea>
             <span class="error" id="textarea_error"></span>
             </p>
@@ -90,6 +95,7 @@
             </p>
         </form>
     </div>
+
     <footer class="footer">
         <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
     </footer>

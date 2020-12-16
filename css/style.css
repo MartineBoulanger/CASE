@@ -171,14 +171,15 @@ a:hover {
   margin: auto;
 }
 
-button {
+.buttons a{
   box-sizing: border-box;
   border: none;
   margin: 0 3.5rem 10rem 3.5rem;
   background: transparent;
+  text-align: center;
 }
 
-button a,
+.buttons a,
 #bestel-btn,
 #reserveer-btn,
 #zend-btn {
@@ -194,7 +195,7 @@ button a,
   text-transform: uppercase;
 }
 
-button a:hover,
+.buttons a:hover,
 #bestel-btn:hover,
 #reserveer-btn:hover,
 #zend-btn:hover {
@@ -239,6 +240,10 @@ button a:hover,
   font-size: 0.9rem;
 }
 
+.nieuwsbrief a{
+  margin-left: -3px;
+}
+
 #e-mail {
   width: 20em;
   padding: 0.8em;
@@ -252,10 +257,6 @@ button a:hover,
   background: rgba(191, 154, 105, 0.2);
 }
 
-#nieuws-btn {
-  margin-left: -40px;
-  outline: 1px solid transparent;
-}
 /* homepagina einde */
 
 /* koffie en bakkerij pagina begin */
