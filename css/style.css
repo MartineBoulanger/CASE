@@ -96,7 +96,6 @@ a:hover {
   padding: 2.5em;
   background-image: url("../img/banner_groot_2.png");
   background-image: contain;
-  /*margin: 2.5rem;*/
 }
 
 .maincontent {
@@ -389,7 +388,7 @@ textarea {
   margin-left: 3rem;
 }
 
-#reserveer-btn{
+#reserveer-btn, #bestel-btn{
   margin-right: 2.5rem;
 }
 
