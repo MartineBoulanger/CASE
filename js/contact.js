@@ -128,25 +128,24 @@ function controle() {
   if (allesCorrectIngevuld) {
     let mail =
       "mailto:" +
-      encodeURIComponent("info@cvo.be") +
+      encodeURIComponent("contact@javathehutt.be") +
       "?cc=" +
-      encodeURIComponent("kopie@cvo.be") +
+      encodeURIComponent("info@javathehutt.be") +
       "&subject=" +
-      encodeURIComponent("Formulier validatie") +
+      encodeURIComponent("contact") +
       "&body=" +
-      "voornaam:" +
+      "Hallo " +
       encodeURIComponent(voornaamTxt) +
-      encodeURIComponent("\r\n\n") +
-      "achternaam:" +
+      " " +
       encodeURIComponent(naamTxt) +
       encodeURIComponent("\r\n\n") +
-      "email:" +
+      "Wij ontvingen zonet een vraag van dit e-mailadres: " +
       encodeURIComponent(emailTxt) +
       encodeURIComponent("\r\n\n") +
-      "onderwerp:" +
+      "U had een vraag over het volgende onderwerp: " +
       encodeURIComponent(onderwerpTxt) +
       encodeURIComponent("\r\n\n") +
-      "textarea:" +
+      "Uw vraag luidt als volgt: " +
       encodeURIComponent(textareaTxt) +
       encodeURIComponent("\r\n\n");
     window.location.href = mail;
