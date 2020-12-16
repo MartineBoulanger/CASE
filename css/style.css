@@ -84,7 +84,7 @@ a {
 }
 
 a:hover {
-  color: #42A629;
+  color: #42a629;
 }
 /* navigatie einde */
 
@@ -209,9 +209,9 @@ a:hover {
 #bestel-btn:hover,
 #reserveer-btn:hover,
 #zend-btn:hover {
-  background-color: #42A629;
+  background-color: #42a629;
   color: #fff8e5;
-  border: 1px solid #42A629;
+  border: 1px solid #42a629;
   text-decoration: none;
 }
 
@@ -226,14 +226,14 @@ a:hover {
   margin-right: 30px;
   margin-bottom: 5rem;
   padding: 20px;
-  border: 1px solid #42A629;
+  border: 1px solid #42a629;
   font-weight: bold;
   line-height: 1.5;
 }
 
 .quote {
   font-size: 35px;
-  color: #42A629;
+  color: #42a629;
 }
 
 .nieuwsbrief {
@@ -335,7 +335,7 @@ a:hover {
 }
 
 .maps {
-  border: 1px solid #42A629;
+  border: 1px solid #42a629;
   grid-column: 2 / 5;
   margin-bottom: 5rem;
   outline: 1px solid transparent;
@@ -388,7 +388,11 @@ textarea {
   margin-left: 3rem;
 }
 
+<<<<<<< HEAD
 #reserveer-btn, #bestel-btn{
+=======
+#reserveer-btn {
+>>>>>>> bd0ab45c8f21cd45acea5a126db25d3dc63b3b08
   margin-right: 2.5rem;
 }
 
@@ -439,7 +443,7 @@ select,
   margin: 50px;
   margin: 2rem 0;
   margin-right: 25px;
-  border: 1px solid #42A629;
+  border: 1px solid #42a629;
   border-radius: 15px;
   box-sizing: border-box;
   background-color: rgba(191, 154, 105, 0.2);
@@ -478,6 +482,16 @@ select,
   padding-bottom: 1em;
 }
 /* reservering en bestelling pagina einde */
+
+/* subscribed pagina */
+
+.subscribed {
+  text-align: center;
+}
+
+#back {
+  color: #bf9a68;
+}
 
 /* footer */
 .footer {
