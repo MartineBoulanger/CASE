@@ -89,10 +89,15 @@ a:hover {
 /* navigatie einde */
 
 /* homepagina begin */
-.banner{
+.banner {
   width: 100%;
+  height: 500px;
   grid-column: 1 / -1;
   padding: 2.5em;
+  background-image: url("../img/banner_groot_2.png");
+  background-image: contain;
+  background-repeat: no-repeat;
+  margin: 2.5rem;
 }
 
 .maincontent {
