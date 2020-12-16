@@ -96,8 +96,7 @@ a:hover {
   padding: 2.5em;
   background-image: url("../img/banner_groot_2.png");
   background-image: contain;
-  background-repeat: no-repeat;
-  margin: 2.5rem;
+  /*margin: 2.5rem;*/
 }
 
 .maincontent {
