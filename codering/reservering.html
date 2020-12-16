@@ -1,104 +1,101 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="meta tags, author, keywords, description" />
     <meta name="description" content="Reserveer een tafel bij Java the Hutt voor een lekker ontbijt, lunch of high-tea." />
     <meta name="author" content="Martine Boulanger, Steven Kelber" />
-
     <title>Reserveren</title>
-
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <script src="../js/reserveer.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="logo">
-        <img src="../img/logo+background.png" alt="Logo Jave the Hutt" />
-      </div>
+        <div class="logo">
+            <img src="../img/logo+background.png" alt="Logo Jave the Hutt" />
+        </div>
     </header>
-
     <div class="navigatie">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="koffie.html">Koffie</a></li>
-          <li><a href="bakkerij.html">Bakkerij</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="koffie.html">Koffie</a></li>
+                <li><a href="bakkerij.html">Bakkerij</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </div>
-
     <div class="maincontent reservering">
-      <header class="intro">
-        <h1>Reservering</h1>
-        <p>
-          Wilt u een tafel voor ontbijt of lunch reserveren, of gezellig een namiddag met uw family of vrienden een high tea doen? Dan kunt u dit formulier invullen, wij sturen u bevestiging wanneer wij uw reservatie ontvangen. Wilt u reserveren voor een groep met meer dan 10 personen? Neem dan contact met ons.
-        </p>
-      </header>
-
-      <form id="reservering" class="reserveer-form">
-          <p>
-            <label for="naam">Naam</label>
-            <input type="text" name="naam" id="naam">
-            <span class="error" id="naam_error"></span>
-          </p>
-          <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <span class="error" id="email_error"></span>
-          </p>
-          <p>
-            <label for="tel">Tel</label>
-            <input type="tel" name="tel" id="tel">
-            <span class="error" id="tel_error"></span>
-          </p>
-          <P>
-            <label for="datum">Datum</label>
-            <input type="date" name="datum" id="datum">
-            <span class="error" id="datum_error"></span>
-          </P>
-          <p>
-            <label for="tijd">Tijd</label>
-            <select name="tijd" id="tijd">
-              <option value="selecteer">selecteer</option>
-              <option value="8:00 - 9:00">8:00 - 9:00</option>
-              <option value="9:00 - 10:00">9:00 - 10:00</option>
-              <option value="10:00 - 11:00">10:00 - 11:00</option>
-              <option value="11:00 - 12:00">11:00 - 12:00</option>
-              <option value="12:00 - 13:00">12:00 - 13:00</option>
-              <option value="13:00 - 14:00">13:00 - 14:00</option>
-              <option value="14:00 - 15:00">14:00 - 15:00</option>
-              <option value="15:00 - 16:00">15:00 - 16:00</option>
-              <option value="16:00 - 17:00">16:00 - 17:00</option>
-            </select>
-            <span class="error" id="tijd_error"></span>
-          </p>
-          <p>
-            <label for="waarvoor">Waarvoor?</label>
-            <select name="waarvoor" id="waarvoor">
-              <option value="selecteer">selecteer</option>
-              <option value="ontbijt">ontbijt</option>
-              <option value="lunch">lunch</option>
-              <option value="high-tea">high-tea</option>
-            </select>
-            <span class="error" id="waarvoor_error"></span>
-          </p>
-          <p>
-            <label for="personen">Personen? (max 10)</label>
-            <input type="number" name="personen" id="personen" min="1" max="10" />
-            <span class="error" id="personen_error"></span>
-          </p>
-          <p>
-            <input type="button" value="Reserveer" id="reserveer-btn" onclick="controle()" />
-          </p>
-      </form>
+        <header class="intro">
+            <h1>Reservering</h1>
+            <p>
+                Wilt u een tafel voor ontbijt of lunch reserveren, of gezellig een namiddag met uw family of vrienden een high tea doen? Dan kunt u dit formulier invullen, wij sturen u bevestiging wanneer wij uw reservatie ontvangen. Wilt u reserveren voor een groep met meer dan 10 personen? Neem dan contact met ons.
+            </p>
+        </header>
+        <form id="reservering" class="reserveer-form">
+            <p>
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" id="naam">
+                <span class="error" id="naam_error"></span>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <span class="error" id="email_error"></span>
+            </p>
+            <p>
+                <label for="tel">Tel</label>
+                <input type="tel" name="tel" id="tel">
+                <span class="error" id="tel_error"></span>
+            </p>
+            <P>
+                <label for="datum">Datum</label>
+                <input type="date" name="datum" id="datum">
+                <span class="error" id="datum_error"></span>
+            </P>
+            <p>
+                <label for="tijd">Tijd</label>
+                <select name="tijd" id="tijd">
+                    <option value="selecteer">selecteer</option>
+                    <option value="8:00 - 9:00">8:00 - 9:00</option>
+                    <option value="9:00 - 10:00">9:00 - 10:00</option>
+                    <option value="10:00 - 11:00">10:00 - 11:00</option>
+                    <option value="11:00 - 12:00">11:00 - 12:00</option>
+                    <option value="12:00 - 13:00">12:00 - 13:00</option>
+                    <option value="13:00 - 14:00">13:00 - 14:00</option>
+                    <option value="14:00 - 15:00">14:00 - 15:00</option>
+                    <option value="15:00 - 16:00">15:00 - 16:00</option>
+                    <option value="16:00 - 17:00">16:00 - 17:00</option>
+                </select>
+                <span class="error" id="tijd_error"></span>
+            </p>
+            <p>
+                <label for="waarvoor">Waarvoor?</label>
+                <select name="waarvoor" id="waarvoor">
+                    <option value="selecteer">selecteer</option>
+                    <option value="ontbijt">ontbijt</option>
+                    <option value="lunch">lunch</option>
+                    <option value="high-tea">high-tea</option>
+                </select>
+                <span class="error" id="waarvoor_error"></span>
+            </p>
+            <p>
+                <label for="personen">Personen? (max 10)</label>
+                <input type="number" name="personen" id="personen" min="1" max="10" />
+                <span class="error" id="personen_error"></span>
+            </p>
+            <p>
+                <input type="button" value="Reserveer" id="reserveer-btn" onclick="controle()" />
+            </p>
+        </form>
     </div>
-
     <footer class="footer">
-      <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
+        <p>&copy; Built and copyrighted by Java the Hutt BVBA</p>
     </footer>
-  </body>
+</body>
+
 </html>
