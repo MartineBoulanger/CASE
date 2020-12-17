@@ -90,12 +90,12 @@ a:hover {
 
 /* homepagina begin */
 .banner {
-  width: 100%;
+  max-width: 1366px;
   height: 500px;
   grid-column: 1 / -1;
   padding: 2.5em;
-  background-image: url("../img/banner_groot_2.png");
-  background-image: contain;
+  background-image: url("../img/banner-img-1366-500.png");
+  background-image: cover;
 }
 
 .maincontent {
@@ -121,7 +121,7 @@ a:hover {
 
 .intro p {
   margin-left: 5em;
-  width: 50%;
+  width: 75%;
   line-height: 1.5;
 }
 
@@ -218,7 +218,7 @@ a:hover {
   text-decoration: none;
 }
 
-#subscribe-btn{
+#subscribe-btn {
   margin-left: -30px;
 }
 
