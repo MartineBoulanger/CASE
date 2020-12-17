@@ -265,7 +265,7 @@ a:hover {
   width: 20em;
   padding: 0.9em;
   border: 1px solid #bf9a68;
-  border-radius: 5px;
+  border-radius: 15px;
   outline: 1px solid transparent;
 }
 
@@ -504,6 +504,7 @@ select,
 
 #back {
   color: #bf9a68;
+  text-align: center;
 }
 
 /* footer */
