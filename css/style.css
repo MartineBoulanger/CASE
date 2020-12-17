@@ -90,7 +90,6 @@ a:hover {
 
 /* homepagina begin */
 .banner {
-  max-width: 1366px;
   height: 500px;
   grid-column: 1 / -1;
   padding: 2.5em;
@@ -102,6 +101,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(5, minmax(10em, auto));
   margin: auto;
+  max-width: 1366px;
 }
 
 .home,
