@@ -71,7 +71,7 @@ function controleTextarea() {
 
 // hoofdfunctie controle
 
-function controle() {
+function verstuur() {
   voornaamTxt = document.getElementById("voornaam").value;
   naamTxt = document.getElementById("naam").value;
   emailTxt = document.getElementById("email").value;

@@ -126,7 +126,7 @@ function geselecteerdeBroden(naam){
 	return broden;
 }
 
-function controle() {
+function verstuur() {
     naamBestelTxt = document.getElementById("naam").value;
     emailBestelTxt = document.getElementById("email").value;
     telBestelTxt = document.getElementById("tel").value;

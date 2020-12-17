@@ -51,7 +51,7 @@ function controleerDatum() {
 	}
 }
 
-function controle(){
+function verstuur(){
 	naamReserveerTxt = document.getElementById("naam").value;
 	emailReserveerTxt = document.getElementById("email").value;
 	telReserveerTxt = document.getElementById("tel").value;
@@ -117,7 +117,7 @@ function controle(){
 		let linkmail = "mailto:" + encodeURIComponent("reserveer@javathehutt.be;")
 			+ encodeURIComponent(document.getElementById('email').value)
 			+ "?cc=" + encodeURIComponent("info@javathehutt.be;")
-			+ "&subject=" + encodeURIComponent("Reserveren")
+			+ "&subject=" + encodeURIComponent("Reservering")
 			+ "&body="
 			+ "Ik wil graag een reservatie doen op naam van "
 			+ encodeURIComponent(naamReserveerTxt) + "."

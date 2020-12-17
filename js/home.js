@@ -14,7 +14,7 @@ function controleEmail() {
   }
 }
 
-function controle() {
+function verstuur() {
   emailTxt = document.getElementById("e-mail").value;
   correct = true;
 
